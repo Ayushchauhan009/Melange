@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Navbar css */
+
+.navbar-link {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-link:hover {
+  position: relative;
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.navbar-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  transform: translateX(80%);
+  width: 40%;
+  height: 2px;
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+}
+.navbar-contact {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+}
+
+.active-link {
+  /* Add your gradient styles */
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+  /* Add your underline styles */
+  text-decoration: underline;
+}
+
+
+.navbar-contact:hover {
+  position: relative;
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+  transition: linear 3s ease-in;
+}
+
+.navbar-contact:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  transform: translateX(80%);
+  width: 40%;
+  height: 2px;
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+}
+
+/* AboutUs-summary CSS */
+
+
+.subscribe:hover{
+  position: relative;
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+  color: white;
+}
+
+
+.multiverse-text{
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+
+.quick-links div a:hover{
+  background: linear-gradient(270deg, #5455FF 5.85%, #C76BFC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Contact-Button CSS */
+
+.expand-button {
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+  padding: 8px 12px;
+  border: none;
+  font-size: 16px;
+  color:#0f0330;
+  cursor: pointer;
+  overflow: hidden;
+}
+.map-button {
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+  padding: 8px 12px;
+  border: none;
+  font-size: 16px;
+  color:#0f0330;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.map-text {
+  margin-right: 14px;
+  margin-top: 3px;
+}
+.button-text {
+  margin-right: 14px;
+  margin-top: 3px;
+}
+
+.explore-text {
+  margin-right: 14px;
+  margin-top: 3px;
+}
+
+.map-text::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-5px,4px);
+  border: 2px solid black;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  will-change: width,height,transform,background-color,box-shadow;
+  z-index: -1; 
+  
+  transition: all 0.3s ease-in;
+}
+.map-button:hover .map-text::before {
+  width: 100%;
+  height: 100%;
+  transform: translate(0) scale(1);
+  border-radius: 50px;
+}
+
+
+.button-text::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-5px,4px);
+  background: linear-gradient(270deg, #5455FF 5.85%, #C76BFC 100%);
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  will-change: width,height,transform,background-color,box-shadow;
+  z-index: -1; 
+  
+  transition: all 0.3s ease-in;
+}
+.explore-text::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-5px,4px);
+  /* background: linear-gradient(270deg, #5455FF 5.85%, #C76BFC 100%);
+   */
+   color: white;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  will-change: width,height,transform,background-color,box-shadow;
+  z-index: -1; 
+  
+  transition: all 0.3s ease-in;
+}
+
+
+.expand-button svg {
+  color: white;
+  margin-left: 20px;}
+
+
+
+.explore-button {
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+  padding: 8px 12px;
+  border: none;
+  font-size: 16px;
+  color:#fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+
+.explore-button svg {
+  color: white;
+  margin-left: 20px;}
+
+
+.expand-button:hover .button-text::before {
+  width: 100%;
+  height: 100%;
+  transform: translate(0) scale(1.1);
+  border-radius: 50px;
+}
+.explore-button:hover .button-text::before {
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50px;
+}
+
+.expand-button:hover .button-text {
+  color: #fff;
+  font-weight: 600;
+}
+
+.expand-button:hover {
+  transform: translateX(0px);
+}
+
+/* What We Do CSS */
+
+.links-text{
+  background: linear-gradient(270deg, #5455FF 5.85%, #C76BFC 100%);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.expand-link:hover{
+  transform: translateX(10px);
+  transition: all 0.2s ease-in;
+}
+.expand-image:hover{
+  transform: translateX(-10px);
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* Our work CSS */
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 79%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: linear-gradient(272.88deg, #5455FF 22.71%, #C76BFC 103.57%);
+}
+
+.work:hover .work-overlay {
+  opacity: 0.2;
+}
+
+
+.rotate-3 {
+  transform: rotate(3deg);
+}
+
+/* testimonials css  */
+
+
+.partner-logo {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .partner-logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-logo {
+    width: 60px;
+  }
+}
+
+
+.testimonial{
+  background: rgba(84, 85, 255, 0.1);
+}
+
+.text-bg{
+  background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+@keyframes animate-slide {
+  0% {
+    transform: translateX(-70px);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+}
+
+.animated-svg .animate-slide {
+  transition: all 0.3 ease-in-out;
+}
+
+
+
+.animated-bg {
+  transition: background-color 0.3s ease;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.black-bg {
+  background-color: #1A1A1A;
+}
+
+
+.bg-image{
+  background-color: #1A1A1A;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    272.88deg,
+    rgba(84, 85, 255, 0.3) 22.71%,
+    rgba(199, 107, 252, 0.3) 103.57%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.overlay.active {
+  opacity: 1;
+}
+
+
+.work {
+  position: relative;
+  /* Add the following line */
+  z-index: 0;
+}
+
+
+/* Today work        */
+
+
+
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s ease-out;
+}
+
+
+.translate-x-animation {
+  transition: transform 0.3s ease-in-out;
+}
+
+.middle-row {
+  transition: transform 0.5s ease-out;
+  transform: translateX(100%);
+}
+
+
+
+.service-page {
+  background-color: #1A1A1A;
+  transition: background-color 1s ease-in-out;
+}
+
+.increased-height {
+  height: 100vh; /* Adjust the height value according to your needs */
+}
+
+
+
+.partner-container {
+  overflow: hidden;
+  
+}
+
+.partner-scroll {
+  display: flex;
+ 
+  align-items: center;
+  justify-content: space-around;
+  animation: scroll-marquee 7s linear infinite;
+}
+
+.partner-scroll img{
+  margin-right: 50px;
+}
+
+
+.client-scroll {
+  animation: scroll-marque 20s linear infinite;
+}
+
+
+.midRow-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: scroll-marqueee 25s linear infinite;
+}
+
+@keyframes scroll-marque {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-110%);
+  }
+}
+
+
+
+@keyframes scroll-marqueee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partner-logo {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-right: 10px; /* Add margin between logos */
+}
+
+
+
+.quick-links:hover li a{
+
+}
+
+.form-bg{
+  background: linear-gradient(268.81deg, rgba(56, 88, 255, 0.1) 28.07%, rgba(183, 69, 255, 0.1) 74.52%, rgba(217, 64, 255, 0.1) 101.17%);
+}
+
+
+.submit-bg{
+  background: linear-gradient(270deg, #5455FF 5.85%, #C76BFC 100%);
+}
+
+
+
+.service-arrow{
+  filter: invert();
+}
+
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0.1rem;
+  background-color: #1A1A1A;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a;
+  border-radius: 0.25rem;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb:hover {
+  background-color: #1a1a1a;
+}
+
+
+
+.blocks{
+  display: inline-block;
+}
+
+.together{
+  background-image: url("./assets/images/worktogether.png");
+  background-size: cover;
+}
+
+
+.team-container {
+  overflow-x:auto;
+  white-space: nowrap;
+}
+
+.team-members {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+  margin-right: 16px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.logos{
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  overflow-x: hidden;
+  display: flex;
+  white-space: nowrap;
+}
+
+/* Clientele Section  */
+.logos-slide{
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+.logos-slide img{
+  height: 50px;
+  margin-right: 50px;
+}
+
+
+
+.media-scroller{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  overflow-x: auto;
+  
+  grid-auto-columns: 21%;
+  overscroll-behavior-inline: contain;
+  padding: 0 1rem 1rem;
+}
+
+.media-element{
+  object-fit: contain;
+  padding: 0.2rem;
+  gap: 0.3rem;
+}
+
+
+.media-scroller::-webkit-scrollbar {
+  width: 1px; /* Set the width of the scrollbar */
+}
+
+.media-scroller::-webkit-scrollbar-track {
+  background-color: #1a1a1a; 
+  width: 5px;/* Set the background color of the track */
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+  border-radius: 5px; /* Round the corners of the thumb */
+  width: 5px;
+}
+
+.media-scroller::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the thumb on hover */
+}
+
+
+.media-element h1{
+  background: linear-gradient(270deg, #5455FF 5.85%, #C76BFC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+.label-heading:hover{
+  margin-right: 10px;
+}
+
+
+.label-text:hover{
+    background: linear-gradient(268.81deg, #3858FF 28.07%, #B745FF 74.52%, #D940FF 101.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  margin-right: 10px;
+}
+

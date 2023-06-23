@@ -1,0 +1,119 @@
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  arrow,
+  image6,
+  collage,
+} from "../../assets/images";
+
+const Servicessummary = ({ handleLinkHover }) => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const linksData = [
+    { id: 0, label: "Brand Strategy", imageSrc: image1 },
+    { id: 1, label: "Content Marketing", imageSrc: image2 },
+    { id: 2, label: "E-commerce Management", imageSrc: image3 },
+    { id: 3, label: "Design Solutions", imageSrc: image4 },
+    { id: 4, label: "Performance Marketing", imageSrc: image5 },
+    { id: 5, label: "Website Development", imageSrc: image6 },
+  ];
+
+  const handleMouseOver = (index) => {
+    setHoveredIndex(index);
+    handleLinkHover(linksData[index].imageSrc);
+  };
+
+  const handleMouseOut = () => {
+    setHoveredIndex(null);
+    handleLinkHover("../../assets/images/image1.jpg");
+  };
+
+  return (
+    <div className="py-4">
+      <div className="text-[white] font-nunito z-30 absolute  pt-6">
+        <h1 className="text-3xl md:text-5xl font-bold md:mb-2 ">What We Do</h1>
+        <p className="font-light text-base md:text-xl z-30">
+          Just like a multiverse where different worlds collide and create
+          something extraordinary.
+        </p>
+        <p className="font-light text-base md:text-xl z-50">
+          Melange brings the diverse realms of marketing to create something
+          bigger and better for your brands.
+        </p>
+      </div>
+      <motion.div
+        className="flex flex-col mt-32 expand-link"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        {hoveredIndex !== null && (
+          <motion.img
+            src={linksData[hoveredIndex].imageSrc}
+            alt={`Image ${hoveredIndex + 1}`}
+            className="w-full absolute md:w-full h-auto md:h-full z-0 md:mt-0 right-[0px] top-[1334px] transition-all ease-in-out duration-100"
+            style={{
+              opacity: hoveredIndex !== null ? 1 : 0,
+              translateY: hoveredIndex !== null ? 0 : -100,
+              transformOrigin: "top",
+            }}
+            initial={{ opacity: 0, translateY: 0 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            exit={{ opacity: 0, translateY: 0 }}
+            transition={{ duration: 0.5 }}
+          />
+        )}
+      </motion.div>
+
+      <div className="flex">
+        <ul className="md:mr-8 z-0">
+          {linksData.map((link) => (
+            <li
+              key={link.id} // Fix: Set the key to link.id
+              className="cursor-pointer hover:font-bold hover:text-3xl my-10 text-[#686868] font-bold text-lg md:text-lg expand-link"
+              onMouseOver={() => handleMouseOver(link.id)}
+              onMouseOut={handleMouseOut}
+            >
+              <span
+                className={`flex items-center ${
+                  hoveredIndex === link.id
+                    ? "text-[#1A1A1A] "
+                    : "text-[#686868]"
+                }`}
+              >
+                {link.label}
+                {hoveredIndex === link.id && (
+                  <>
+                    <img
+                      src={arrow}
+                      alt="Arrow"
+                      className="relative top-3 -right-8 transform filter brightness-0 hue-rotate-270 -translate-y-1/2 expand-link"
+                      style={{ width: "40px", height: "20px" }}
+                    />
+                  </>
+                )}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <div className="w-[30%] mt-16 absolute ml-80 z-0 right-0">
+          <video
+            src=""
+            autoPlay
+            loop
+            muted
+            className="w-64 h-64"
+            type="video/gif"
+          ></video>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Servicessummary;

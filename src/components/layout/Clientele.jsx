@@ -13,7 +13,7 @@ const Client = ({ icon }) => {
 
 const Clientele = () => {
   return (
-    <div className="font-nunito pb-8 bg-[#1a1a1a]  mt-32">
+    <div className="font-nunito pb-8 2xl:pb-12 bg-[#1a1a1a]  mt-32 2xl:mt-44">
       <div className="mt-16 px-4 py-8 md:py-16 md:px-24 lg:px-28">
         <h1 className="text-[#fff] text-2xl md:text-3xl lg:text-4xl font-bold">
           Clientele

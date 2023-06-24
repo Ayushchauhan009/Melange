@@ -70,7 +70,7 @@ const WorkSummary = () => {
           the ever-changing digital eco-system.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-24 gap-y-32 lg:pr-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-24 2xl:gap-x-36 gap-y-32 2xl:gap-y-44 lg:pr-6">
         {works.map((work, index) => (
           <div
             key={index}

@@ -32,19 +32,19 @@ const CountingNumber = ({ value, duration }) => {
 const OurJourney = () => {
   return (
     <div className="font-nunito pb-44">
-      <h1 className="text-center font-extrabold text-4xl my-8 md:text-4xl lg:text-5xl">
+      <h1 className="text-center font-extrabold text-4xl my-8 md:text-4xl lg:text-4xl">
         Our Journey
       </h1>
       <div className="flex flex-col md:flex-row justify-evenly items-center multiverse-text">
         <div className="flex flex-col justify-evenly mt-8 md:mt-0">
           <div className="text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
               <CountingNumber value={51} duration={2} /> <span>+</span>
             </h1>
             <p className="font-bold text-xl md:text-2xl">Clients</p>
           </div>
           <div className="mt-8 md:mt-28 text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
               <CountingNumber value={2} duration={3} /> <span>Bn+</span>
             </h1>
             <p className="font-bold text-xl md:text-2xl">Reach</p>
@@ -55,13 +55,13 @@ const OurJourney = () => {
         </div>
         <div>
           <div className="text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
               <CountingNumber value={101} duration={4} /> <span>+</span>
             </h1>
             <p className="font-bold text-xl md:text-2xl">Media Spends</p>
           </div>
           <div className="mt-8 md:mt-28 text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
               <CountingNumber value={251} duration={3} /> <span>+</span>
             </h1>
             <p className="font-bold text-xl md:text-2xl">Campaigns executed</p>

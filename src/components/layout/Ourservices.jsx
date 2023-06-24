@@ -6,8 +6,8 @@ const Ourservices = () => {
   return (
     <div className="py-32 flex flex-col-reverse lg:flex-row-reverse items-start  justify-between px-6 lg:px-28">
       <div className="w-auto font-nunito lg:w-full pt-10">
-        <h1 className="text-5xl font-bold">Our Services</h1>
-        <p className="multiverse-text py-5 text-3xl w-[88%] font-bold">
+        <h1 className="text-4xl font-bold">Our Services</h1>
+        <p className="multiverse-text py-5 text-2xl w-[70%] font-bold">
           A full-service integrated digital solutions agency, empowering brands
           to thrive in the digital age
         </p>

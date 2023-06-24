@@ -92,8 +92,8 @@ const WorkSummary = () => {
   return (
     <div className="font-nunito px-8 sm:px-16 lg:px-28 mb-16 lg:py-16">
       <div className="py-8 sm:py-16">
-        <h1 className="font-bold text-2xl sm:text-5xl">Our Work</h1>
-        <p className="font-medium text-base sm:text-2xl mt-3 ml-1">
+        <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
+        <p className="font-medium text-base sm:text-xl mt-3 ml-1">
           Explore our diverse range of projects, each a testament to our
           commitment and expertise in delivering holistic digital solutions for
           our clients.
@@ -116,7 +116,7 @@ const WorkSummary = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-36 gap-y-32">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-14 gap-y-20 lg:px-20">
         {filteredWorks.map((work, index) => (
           <div
             key={index}

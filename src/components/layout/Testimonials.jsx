@@ -30,7 +30,7 @@ const Testimonials = () => {
       name: "Vidya Pandit",
       title: "Co-founder- Kalon Organics",
       review:
-        "They helped us bring our brand to life with powerful design concepts, robust e-commerce strategies and website optimisation. Mélange Digital is like your in-house marketing team who is always ready to support and come up with strategies based on the latest trends and technology.",
+        "Mélange Digital is like your in-house marketing team who is always ready to support and come up with strategies based on the latest trends and technology.",
       comma: comma,
     },
     {
@@ -80,7 +80,7 @@ const Testimonials = () => {
   return (
     <div className="">
       <div>
-        <h2 className="font-bold font-nunito text-5xl text-center px-8 pt-14 pb-4 md:px-52">
+        <h2 className="font-bold font-nunito text-4xl text-center px-8 pt-14 pb-4 md:px-52">
           What Our Clients Say About Us
         </h2>
         <div className="reviews flex flex-col md:flex-row justify-center ">
@@ -120,7 +120,7 @@ const Testimonials = () => {
         </div>
       </div>
       <div className="py-10 px-20">
-        <h1 className="text-center text-md font-nunito md:text-5xl font-bold">
+        <h1 className="text-center text-md font-nunito md:text-4xl font-bold">
           Proud To Be Partnered With
         </h1>
         <div className="partner-container py-16 px-32">

@@ -34,20 +34,20 @@ const Servicessummary = ({ handleLinkHover }) => {
   };
 
   return (
-    <div className="py-4">
-      <div className="text-[white] font-nunito z-30 absolute  pt-6">
-        <h1 className="text-3xl md:text-5xl font-bold md:mb-2 ">What We Do</h1>
-        <p className="font-light text-base md:text-xl z-30">
+    <div className="py-4 px-4">
+      <div className="text-[white] font-nunito z-30 absolute pt-6">
+        <h1 className="text-3xl md:text-4xl font-bold md:mb-2 ">What We Do</h1>
+        <p className="font-light text-base md:text-lg z-30">
           Just like a multiverse where different worlds collide and create
           something extraordinary.
         </p>
-        <p className="font-light text-base md:text-xl z-50">
+        <p className="font-light text-base md:text-lg z-50">
           Melange brings the diverse realms of marketing to create something
           bigger and better for your brands.
         </p>
       </div>
       <motion.div
-        className="flex flex-col mt-32 expand-link"
+        className="flex flex-col mt-44 md:mt-32  expand-link"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -56,7 +56,7 @@ const Servicessummary = ({ handleLinkHover }) => {
           <motion.img
             src={linksData[hoveredIndex].imageSrc}
             alt={`Image ${hoveredIndex + 1}`}
-            className="w-full absolute md:w-full h-auto md:h-full z-0 md:mt-0 right-[0px] top-[1334px] transition-all ease-in-out duration-100"
+            className="w-full absolute md:w-full h-auto md:h-full z-0 md:mt-0 right-0 md:top-[600px] lg:top-[1440px] transition-all ease-in-out duration-100"
             style={{
               opacity: hoveredIndex !== null ? 1 : 0,
               translateY: hoveredIndex !== null ? 0 : -100,
@@ -70,11 +70,11 @@ const Servicessummary = ({ handleLinkHover }) => {
         )}
       </motion.div>
 
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <ul className="md:mr-8 z-0">
           {linksData.map((link) => (
             <li
-              key={link.id} // Fix: Set the key to link.id
+              key={link.id}
               className="cursor-pointer hover:font-bold hover:text-3xl my-10 text-[#686868] font-bold text-lg md:text-lg expand-link"
               onMouseOver={() => handleMouseOver(link.id)}
               onMouseOut={handleMouseOut}
@@ -101,7 +101,7 @@ const Servicessummary = ({ handleLinkHover }) => {
             </li>
           ))}
         </ul>
-        <div className="w-[30%] mt-16 absolute ml-80 z-0 right-0">
+        <div className="w-[30%] md:-mt-44 lg:-mt-0 md:ml-8 z-0 right-0 md:static">
           <video
             src=""
             autoPlay

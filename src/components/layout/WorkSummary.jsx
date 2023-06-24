@@ -17,7 +17,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
   return (
     <motion.div
       className="work cursor-pointer relative"
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 1, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
@@ -35,7 +35,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
           }}
         />
       </Link>
-      <div className="flex py-1 text-[#5556ff] font-semibold mt-0">
+      <div className="flex py-1 multiverse-text font-semibold mt-0">
         <p>{tag1}</p>
         <p className="mx-5">{tag2}</p>
         <p>{tag3}</p>
@@ -64,13 +64,13 @@ const WorkSummary = () => {
   return (
     <div className="font-nunito px-8 sm:px-16 lg:px-28">
       <div className="py-8 sm:py-16">
-        <h1 className="font-bold text-2xl sm:text-5xl">Our Work</h1>
-        <p className="font-medium text-base sm:text-2xl pl-1 mt-2">
+        <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
+        <p className="font-medium text-base sm:text-lg pl-1 mt-2">
           We are on a mission to help start-ups and emerging brands thrive in
           the ever-changing digital eco-system.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-36 gap-y-28">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-16 gap-y-16 lg:px-24">
         {works.map((work, index) => (
           <div
             key={index}
@@ -80,9 +80,9 @@ const WorkSummary = () => {
           >
             <motion.div
               className={index % 2 === 0 ? "odd" : "even"}
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 1, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.2 }}
             >
               <Work key={`work-${index}`} {...work} path={work.path} />
             </motion.div>

@@ -1,5 +1,6 @@
 export { default as Navbar } from "./Navbar";
 export { default as Banner } from "./Banner";
+export { default as Logo } from "./Logo";
 export { default as AboutSummary } from "./AboutSummary";
 export { default as ContactButton } from "./ContactButton";
 export { default as Whatwedo } from "./Whatwedo";

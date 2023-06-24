@@ -55,16 +55,16 @@ const Footer = () => {
             <div className="text-white mt-8 w-full md:mt-0 lg:-mt-[40%] lg:ml-32 lg:transform quick-links lg:translate-x-[32%]">
               <h1 className="font-bold text-lg md:text-xl">Quick Links</h1>
               <div className="md:mt-0">
-                <div className="my-4 cursor-pointer md:text-lg font-semibold">
+                <div className="my-4 cursor-pointer md:text-lg w-10 font-semibold">
                   <Link to="/services">Services</Link>
                 </div>
-                <div className="my-4 cursor-pointer md:text-lg font-semibold">
+                <div className="my-4 cursor-pointer md:text-lg w-10 font-semibold">
                   <Link to="/work">Work</Link>
                 </div>
-                <div className="my-4 cursor-pointer md:text-lg font-semibold">
+                <div className="my-4 cursor-pointer md:text-lg w-24 font-semibold">
                   <Link to="/about">About Us</Link>
                 </div>
-                <div className="my-4 cursor-pointer md:font-semibold text-lg">
+                <div className="my-4 cursor-pointer md:font-semibold w-24 text-lg">
                   <Link to="/contact">Contact Us</Link>
                 </div>
                 <div className="my-4 cursor-pointer font-semibold text-lg">

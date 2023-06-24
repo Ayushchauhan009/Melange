@@ -9,8 +9,8 @@ const Whatwedo = () => {
   };
 
   return (
-    <div className={`px-6 md:py-1 bg-image ${bgImage} md:px-28`}>
-      <Servicessummary />
+    <div className={`px-6 md:py-1 bg-image ${bgImage} md:px-24`}>
+      <Servicessummary handleLinkHover={handleLinkHover} />
     </div>
   );
 };

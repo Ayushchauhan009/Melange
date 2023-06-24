@@ -15,7 +15,7 @@ const Clientele = () => {
   return (
     <div className="font-nunito pb-8 bg-[#1a1a1a] mt-32">
       <div className="mt-16 px-4 md:py-16 md:px-20 lg:px-28">
-        <h1 className="text-[#fff] text-2xl md:text-3xl lg:text-5xl font-bold">
+        <h1 className="text-[#fff] text-2xl md:text-3xl lg:text-4xl font-bold">
           Clientele
         </h1>
       </div>

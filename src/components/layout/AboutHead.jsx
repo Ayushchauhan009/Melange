@@ -16,7 +16,7 @@ const AboutHead = () => {
     <div className="py-12 md:py-24 font-nunito">
       <div className=" px-4 md:px-24">
         <div className="w-auto md:w-[84%] lg:px-4">
-          <h1 className="text-2xl md:text-5xl font-bold">About Us</h1>
+          <h1 className="text-2xl md:text-4xl font-bold">About Us</h1>
           <p className="text-xl my-2 font-extrabold multiverse-text">
             Think of us as your in-house marketing team!
           </p>

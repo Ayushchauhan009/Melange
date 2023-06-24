@@ -14,16 +14,16 @@ const Client = ({ icon }) => {
 const Clientele = () => {
   return (
     <div className="font-nunito pb-8 bg-[#1a1a1a] mt-32">
-      <div className="mt-16 px-4 md:py-16 md:px-20 lg:px-28">
-        <h1 className="text-[#fff] text-2xl md:text-3xl lg:text-4xl font-bold">
+      <div className="mt-16 px-4 py-8 md:py-16 md:px-20 lg:px-28">
+        <h1 className="text-[#fff] text-2xl md:text-3xl lg:text-4xl font-bold text-center">
           Clientele
         </h1>
       </div>
-      <div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-0 gap-y-10 px-28 ">
+      <div className="px-4 md:px-8 lg:px-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-0 gap-y-10 mx-auto">
           {clients.map((client, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="flex justify-center">
                 <Client icon={client.icon} />
               </div>
             );

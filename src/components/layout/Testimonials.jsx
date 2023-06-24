@@ -87,7 +87,7 @@ const Testimonials = () => {
           {getPageReviews().map((review) => (
             <div
               key={review.id}
-              className="review mx-4 md:mx-4 my-6 px-4 py-6 w-full testimonial rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
+              className="review mx-0 md:mx-4 my-6 px-4 py-6 w-full testimonial rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
             >
               <div className="flex items-start">
                 <div className="mr-4 -mt-2">

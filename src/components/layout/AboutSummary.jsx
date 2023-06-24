@@ -19,14 +19,14 @@ const AboutSummary = () => {
                 The many worlds of marketing, under one roof!
               </p>
             </div>
-            <p className="pt-3 pl-2 font-nunito font-semibold text-[#0f0330]">
+            <p className="pt-3 pl-2 font-nunito font-semibold w-[80%] text-[#0f0330]">
               We believe that marketing extends beyond just crafting the right
               message, developing artistic creatives, or analyzing data. It's
               about integrating these elements with a{" "}
               <b>well-defined strategy & structure</b>, to build a{" "}
               <b>cohesive brand experience</b>.
             </p>
-            <p className="pt-3 pl-2 font-nunito font-semibold text-[#0f0330]">
+            <p className="pt-3 pl-2 font-nunito font-semibold w-[80%] text-[#0f0330]">
               With us, you have your very own marketing multiverse, serving as
               your <b>dedicated in-house marketing team</b>.
             </p>

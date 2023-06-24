@@ -27,7 +27,7 @@ const Logo = () => {
 
   return (
     <div className="container md:mx-8">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col w-[80%] items-center">
         {currentImages.map((image, index) => (
           <img
             key={index}

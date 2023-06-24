@@ -29,7 +29,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
         <motion.img
           src={icon}
           alt=""
-          className="w-full h-auto transition-all duration-300 transform-gpu"
+          className="w-full h-auto 2xl:w-[90%] 2xl:h-[80%] transition-all duration-300 transform-gpu "
           style={{
             scale: isHovered ? 1 : 1,
           }}

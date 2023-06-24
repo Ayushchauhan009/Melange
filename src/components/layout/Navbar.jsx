@@ -84,13 +84,13 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="sm:hidden">
-          <div className="bg-white font-extrabold py-2">
+          <div className="bg-[submit-bg] flex flex-col items-center py-20 justify-evenly h-screen font-extrabold ">
             <div className="navbar-link cursor-pointer">
               <NavLink
                 to="/services"
                 activeClassName="active-link"
                 exact
-                className="nav-link"
+                className="nav-link text-[28px]"
               >
                 Services
               </NavLink>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 to="/work"
                 activeClassName="active-link"
                 exact
-                className="nav-link"
+                className="nav-link text-[28px]"
               >
                 Work
               </NavLink>
@@ -110,21 +110,21 @@ const Navbar = () => {
                 to="/about"
                 activeClassName="active-link"
                 exact
-                className="nav-link"
+                className="nav-link text-[28px]"
               >
                 About Us
               </NavLink>
             </div>
-          </div>
-          <div className="navbar-link cursor-pointer">
-            <NavLink
-              to="/contact"
-              activeClassName="active-link"
-              exact
-              className="nav-link"
-            >
-              Contact Us
-            </NavLink>
+            <div className="navbar-link cursor-pointer">
+              <NavLink
+                to="/contact"
+                activeClassName="active-link"
+                exact
+                className="nav-link text-[28px]"
+              >
+                Contact Us
+              </NavLink>
+            </div>
           </div>
         </div>
       )}

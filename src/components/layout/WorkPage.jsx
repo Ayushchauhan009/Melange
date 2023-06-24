@@ -35,9 +35,9 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
         />
       </div>
       <div className="flex py-1 text-[#5556ff] font-semibold mt-0">
-        <p>{tag1}</p>
-        <p className="mx-5">{tag2}</p>
-        <p>{tag3}</p>
+        <p className="text-[12px] md:text-[14px] ">{tag1}</p>
+        <p className="text-[12px] md:text-[14px] mx-3 md:mx-5">{tag2}</p>
+        <p className="text-[12px] md:text-[14px]">{tag3}</p>
       </div>
       <div className="cursor-pointer">
         <motion.h1
@@ -91,7 +91,7 @@ const WorkSummary = () => {
 
   return (
     <div className="font-nunito px-8 sm:px-16 lg:px-28 mb-16 lg:py-16">
-      <div className="py-8 sm:py-16">
+      <div className="py-14 sm:py-16">
         <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
         <p className="font-medium text-base sm:text-xl mt-3 ml-1">
           Explore our diverse range of projects, each a testament to our
@@ -100,7 +100,7 @@ const WorkSummary = () => {
         </p>
       </div>
       <div className="mb-8">
-        <div className="flex space-x-4">
+        <div className="flex flex-col md:flex-row md:space-y-0 space-y-2 space-x-4">
           {tags.map((tag) => (
             <button
               key={tag}

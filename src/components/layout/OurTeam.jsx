@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   person1,
   person2,
@@ -10,9 +10,16 @@ import {
   person10,
   linkedin2,
   person9,
+  plus,
 } from "../../assets/team";
 
 const OurTeam = () => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
     <div className="bg-[#1a1a1a] font-nunito py-16 px-8 md:px-24">
       <h1 className="text-white font-bold text-4xl text-center mb-3">
@@ -39,8 +46,23 @@ const OurTeam = () => {
             <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
           </a>
         </div>
-        <div className="media-element">
-          <img src={person1} alt="" />
+        <div className={`media-element `}>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped ? "flipped2 " : "flippedBack2"
+            }`}
+            onClick={handleClick}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped
+                  ? "hidden "
+                  : "visible transform transition-all duration-75"
+              }`}
+            />
+          </div>
           <h1 className="font-bold text-[18px]">Saswat Mahapatra</h1>
           <p className="text-white font-bold text-[14px]">
             Chief Creative Officer

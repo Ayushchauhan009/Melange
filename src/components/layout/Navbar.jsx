@@ -36,7 +36,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`hidden sm:flex font-extrabold text-[17px] justify-evenly items-center w-2/3 md:w-[45%] ${
+          className={`hidden sm:flex font-extrabold text-[17px] justify-around items-center w-2/3 md:w-[40%] ${
             isMenuOpen ? "hidden" : ""
           }`}
         >

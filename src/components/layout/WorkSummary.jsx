@@ -50,7 +50,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
           {title}
         </motion.h1>
         <motion.p
-          className="text-[#1a1a1a] text-base w-auto 2xl:w-[90%] sm:text-md font-medium"
+          className="text-[#1a1a1a] text-base w-auto 2xl:w-[94%] sm:text-md font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -72,7 +72,7 @@ const WorkSummary = () => {
           the ever-changing digital eco-system.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-24 2xl:gap-x-36 gap-y-32 xl:gap-y-64 2xl:gap-y-56 lg:pr-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-28 2xl:gap-x-36 gap-y-32 xl:gap-y-64 2xl:gap-y-56 lg:pr-2">
         {works.map((work, index) => (
           <div
             key={index}

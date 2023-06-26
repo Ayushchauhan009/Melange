@@ -68,11 +68,21 @@ import kunalrathod from "./kunalrathod.svg";
 import proportunity from "./proportunity.png";
 import travelstop from "./travelstop2.png";
 import activeclub from "./activeclub.png";
+import proportunityImage from "./proportunityImage.png";
+import kylas from "./kylas.png";
+import interakt from "./interakt.png";
+import proofhub from "./proofHub.png";
+import hootsuite from "./hootsuite.png";
 
 export {
+  interakt,
+  proofhub,
+  hootsuite,
+  kylas,
   activeclub,
   travelstop,
   proportunity,
+  proportunityImage,
   kunalrathod,
   midimage,
   zoom,

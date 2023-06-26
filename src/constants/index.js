@@ -32,6 +32,7 @@ import {
   duvonlogo2,
   LT,
   connect2cloud,
+  proportunityImage,
 } from "../assets/images";
 import { linkedin2, person1 } from "../assets/team";
 
@@ -415,7 +416,7 @@ const workpage = [
       "Launched a B2B campaign targeting SMEs that garnered 400+ client signups generating an advertising revenue of 90+ crores PAN India.",
   },
   {
-    icon: proportunity,
+    icon: proportunityImage,
     tag1: "Brand Strategy",
     tag2: "Website Development",
     tag3: "Design",

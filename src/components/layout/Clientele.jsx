@@ -24,7 +24,10 @@ const Clientele = () => {
           {clients.map((client, index) => {
             return (
               <div key={index} className="flex justify-center">
-                <Client icon={client.icon} />
+                <Client
+                  icon={client.icon}
+                  className={index === 7 ? "eighth-child" : ""}
+                />
               </div>
             );
           })}

@@ -26,7 +26,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
     >
       <Link to={path} className="work">
         <div
-          className={`overlay ${isHovered ? "active" : ""} w-full 2xl:w-2/3`}
+          className={`overlay ${isHovered ? "active" : ""} w-full 2xl:w-full`}
         ></div>
         <motion.img
           src={icon}

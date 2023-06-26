@@ -31,8 +31,8 @@ const CountingNumber = ({ value, duration }) => {
 
 const OurJourney = () => {
   return (
-    <div className="font-nunito pb-44">
-      <h1 className="text-center font-extrabold text-4xl my-8 md:text-4xl lg:text-4xl">
+    <div className="font-nunito pb-64">
+      <h1 className="text-center font-extrabold text-4xl my-12 md:text-4xl lg:text-4xl">
         Our Journey
       </h1>
       <div className="flex flex-col md:flex-row justify-evenly items-center multiverse-text">

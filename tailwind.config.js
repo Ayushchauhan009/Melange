@@ -15,6 +15,9 @@ export default {
       animation: {
         scale: "scale 0.5s ease-in-out",
       },
+      screens: {
+        xxs: "300px",
+      },
     },
   },
   plugins: [],

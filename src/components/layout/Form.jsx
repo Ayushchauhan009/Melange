@@ -57,7 +57,7 @@ const Form = () => {
   };
 
   return (
-    <div className="form-bg mx-14 py-10">
+    <div className="form-bg mx-14 mt-8 py-10">
       <form onSubmit={handleSubmit} className=" lg:px-16 px-4 md:px-0">
         <div className="mb-4">
           <input

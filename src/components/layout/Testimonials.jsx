@@ -80,7 +80,7 @@ const Testimonials = () => {
   return (
     <div className="">
       <div>
-        <h2 className="font-bold font-nunito text-4xl text-center px-8 pt-14 pb-4 md:px-52">
+        <h2 className="font-bold font-nunito text-4xl text-center px-8 pt-16 pb-4 md:px-52">
           What Our Clients Say About Us
         </h2>
         <div className="reviews flex flex-col md:flex-row justify-center ">
@@ -96,7 +96,7 @@ const Testimonials = () => {
                 <div>
                   <h3 className="font-bold">{review.name}</h3>
                   <p className="font-semibold">{review.title}</p>
-                  <p className="mt-3 font-sm md:font-medium">{review.review}</p>
+                  <p className="mt-3 font-sm md:font-normal">{review.review}</p>
                 </div>
                 <div className="ml-auto">
                   <img src={review.comma} alt="" className="w-32 h- -mt-3" />

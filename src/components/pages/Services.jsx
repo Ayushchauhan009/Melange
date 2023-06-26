@@ -15,7 +15,7 @@ const Services = () => {
         setActiveSection("section1");
       } else if (
         currentPosition >= window.innerHeight &&
-        currentPosition < 4.5 * window.innerHeight
+        currentPosition < 4.9 * window.innerHeight
       ) {
         setActiveSection("section2");
       } else if (

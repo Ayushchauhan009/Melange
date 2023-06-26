@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import { ExploreButton } from ".";
 import { Link } from "react-router-dom";
 import { labels } from "../../constants";
@@ -7,7 +7,7 @@ import { servicearrow } from "../../assets/images";
 
 const Labels = ({ title, description, links, textColor }) => {
   return (
-    <div className="my-10 lg:my-20 text-white">
+    <div className="my-10 lg:my-24 text-white">
       <div className="flex flex-col lg:flex-row  justify-between items-center">
         <h1
           className={`text-bg font-bold text-3xl label-heading lg:text-3xl mb-3 flex cursor-pointer items-center border-none lg:mb-3 ${textColor}`}
@@ -17,7 +17,7 @@ const Labels = ({ title, description, links, textColor }) => {
             <img
               src={servicearrow}
               alt=""
-              className=" w-4 h-4 service-arrow  "
+              className=" w-2 h-2 service-arrow  "
             />
           </span>
         </h1>
@@ -51,15 +51,39 @@ const Labels = ({ title, description, links, textColor }) => {
 };
 
 const ServiceLabeling = ({ textColor, inView }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      // Adjust the scroll position threshold as needed
+      const scrollThreshold = 30; // Change this value to determine when the color change occurs
+
+      if (scrollPosition > scrollThreshold) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
-      className={`font-nunito px-6 lg:px-28 transition-opacity duration-1000`}
+      className={`font-nunito px-6 pb-14 lg:px-28 transition-opacity duration-1000`}
       style={{ opacity: inView ? 1 : 0 }} // Set opacity based on inView status
     >
-      <h1 className="font-bold text-3xl text-white lg:text-4xl">
+      <h1
+        className={`font-bold text-3xl lg:text-4xl ${
+          isScrolled ? "text-white" : "text-[#000]"
+        }`}
+      >
         Your very own Marketing Multiverse
       </h1>
-      <div>
+      <div className="space-y-28">
         {labels.map((label, index) => {
           return <Labels key={index} {...label} textColor={textColor} />;
         })}

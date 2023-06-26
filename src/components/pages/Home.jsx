@@ -48,13 +48,13 @@ const Home = () => {
 
   const fadeIn = useSpring({
     opacity: calculateOpacity(2),
-    from: { opacity: 0 },
+    from: { opacity: 1 },
     config: { duration: 500 },
   });
 
   const fadeOut = useSpring({
     opacity: calculateOpacity(2),
-    from: { opacity: 0 },
+    from: { opacity: 1 },
     config: { duration: 500 },
   });
 
@@ -69,9 +69,9 @@ const Home = () => {
     <>
       <Navbar style={navbarStyle} />
       <Banner />
-      <animated.div style={fadeIn}>
+      <div>
         <AboutSummary />
-      </animated.div>
+      </div>
       <animated.div style={fadeOut}>
         <Whatwedo />
       </animated.div>

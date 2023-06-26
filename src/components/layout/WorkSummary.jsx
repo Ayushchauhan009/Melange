@@ -62,15 +62,15 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
 
 const WorkSummary = () => {
   return (
-    <div className="font-nunito px-8 sm:px-16 lg:px-28">
-      <div className="py-8 sm:py-16">
+    <div className="font-nunito px-8 sm:px-16 lg:px-28 ">
+      <div className="py-8 sm:py-20">
         <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
         <p className="font-medium text-base sm:text-lg pl-1 mt-2">
           We are on a mission to help start-ups and emerging brands thrive in
           the ever-changing digital eco-system.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-24 2xl:gap-x-36 gap-y-32 2xl:gap-y-44 lg:pr-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-x-24 2xl:gap-x-36 gap-y-32 xl:gap-y-64 2xl:gap-y-56 lg:pr-6">
         {works.map((work, index) => (
           <div
             key={index}

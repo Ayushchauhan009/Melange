@@ -5,6 +5,7 @@ import {
   person3,
   person4,
   person5,
+  person7,
   person8,
   person10,
   linkedin2,
@@ -77,7 +78,7 @@ const OurTeam = () => {
           </a>
         </div>
         <div className="media-element">
-          <img src={person1} alt="" />
+          <img src={person7} alt="" />
           <h1 className="font-bold text-[18px]">Ekatrina Bolinjkar</h1>
           <p className="text-white font-bold text-[14px]">
             Head - HR & Analytics

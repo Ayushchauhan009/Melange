@@ -24,7 +24,9 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="work">
-        <div className={`overlay ${isHovered ? "active" : ""}`}></div>
+        <div
+          className={`overlay ${isHovered ? "active" : ""} w-full 2xl:w-[85%]`}
+        ></div>
         <motion.img
           src={icon}
           alt=""

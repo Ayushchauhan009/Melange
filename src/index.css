@@ -452,7 +452,7 @@
  
   align-items: center;
   justify-content: space-around;
-  animation: scroll-marquee 13s linear infinite;
+  animation: scroll-marquee 25s linear infinite;
 }
 
 
@@ -667,6 +667,23 @@
 }
 
 
+/* person1 */
+
+.flipped1{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/person1.png");
+  
+}
+
+.flippedBack1{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+}
+
+/* person2 */
+
 .flipped2{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
@@ -675,7 +692,138 @@
 }
 
 .flippedBack2{
-  transform: rotateY(0deg);
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person3 */
+
+.flipped3{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack3{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person4 */
+
+
+.flipped4{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack4{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person5 */
+
+.flipped5{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack5{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person6 */
+
+.flipped6{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack6{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person7 */
+
+.flipped7{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack7{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person8 */
+
+.flipped8{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack8{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person9 */
+
+
+.flipped9{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack9{
+  transform: rotateY(360deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/Pranjali.jpg");
+}
+
+
+/* person10 */
+
+
+.flipped10{
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  background-image: url("./assets/team/SANKETSIR.jpg");
+  
+}
+
+.flippedBack10{
+  transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
   background-image: url("./assets/team/Pranjali.jpg");
 }

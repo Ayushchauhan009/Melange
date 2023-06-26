@@ -14,10 +14,16 @@ import {
 } from "../../assets/team";
 
 const OurTeam = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped1, setIsFlipped1] = useState(false);
 
-  const handleClick = () => {
-    setIsFlipped(!isFlipped);
+  const handleClick1 = () => {
+    setIsFlipped1(!isFlipped1);
+  };
+
+  const [isFlipped2, setIsFlipped2] = useState(false);
+
+  const handleClick2 = () => {
+    setIsFlipped2(!isFlipped2);
   };
 
   return (
@@ -35,41 +41,62 @@ const OurTeam = () => {
         and cost-effective solutions.
       </p>
       <div className="media-scroller">
-        <div className="media-element">
-          <img src={person2} alt="" />
-          <h1 className="font-bold text-[18px]">Sanket Bolinjkar</h1>
-          <p className="text-white font-bold text-[14px]">Founder & CEO</p>
-          <a
-            href="https://www.linkedin.com/in/sanket-bolinjkar-743ba224"
-            target="_blank"
-          >
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
-        </div>
-        <div className={`media-element `}>
+        <div className={`media-element`}>
           <div
             className={`w-auto h-64 bg-contain items-center flex justify-center ${
-              isFlipped ? "flipped2 " : "flippedBack2"
+              isFlipped1 ? "flipped1 " : "flippedBack1"
             }`}
-            onClick={handleClick}
+            onClick={handleClick1}
           >
             <img
               src={plus}
               alt=""
               className={`absolute right-2 top-2 ${
-                isFlipped
-                  ? "hidden "
-                  : "visible transform transition-all duration-75"
+                isFlipped1
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
               }`}
             />
           </div>
-          <h1 className="font-bold text-[18px]">Saswat Mahapatra</h1>
+
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Sanket Bolinjkar</h1>
+            <a
+              href="https://www.linkedin.com/in/sanket-bolinjkar-743ba224"
+              target="_blank"
+            >
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+          <p className="text-white font-bold text-[14px]">Founder & CEO</p>
+        </div>
+        <div className={`media-element `}>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped2 ? "flipped2 " : "flippedBack2"
+            }`}
+            onClick={handleClick2}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped2
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Saswat Mahapatra</h1>
+            <a href="https://www.linkedin.com/in/smahapatra" target="_blank">
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">
             Chief Creative Officer
           </p>
-          <a href="https://www.linkedin.com/in/smahapatra" target="_blank">
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
         <div className="media-element">
           <img src={person4} alt="" />
@@ -77,8 +104,8 @@ const OurTeam = () => {
           <p className="text-white font-bold text-[14px]">
             Chief Creative Officer
           </p>
-          <a href="#">
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+          <a href="#" className="w-2">
+            <img src={linkedin2} alt="" className=" ml-1 h-5" />
           </a>
         </div>
         <div className="media-element">

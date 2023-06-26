@@ -50,7 +50,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
           {title}
         </motion.h1>
         <motion.p
-          className="text-[#1a1a1a] text-base w-auto 2xl:w-[94%] sm:text-md font-medium"
+          className="text-[#1a1a1a] text-base w-auto 2xl:w-[100%] sm:text-md font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}

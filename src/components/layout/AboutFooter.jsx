@@ -73,16 +73,24 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="text-white lg:pl-36 mt-8 md:mt-6 md:ml-auto flex flex-col lg:items-end md:w-1/2 lg:w-auto">
+          <div className="text-white lg:pl-36 mt-8 md:mt-5 md:ml-auto flex flex-col lg:items-end md:w-1/2 lg:w-auto">
             <div className="lg:transform lg:translate-x-[-58%]">
               <h1 className="font-bold text-lg md:text-xl">Call Us</h1>
-              <p className="text-base md:text-lg mt-2">+91 7700974123</p>
+              <a
+                href="tel: +917700974123"
+                className="text-base md:text-lg mt-2"
+              >
+                +91 7700974123
+              </a>
             </div>
             <div className="my-4 lg:transform lg:translate-x-[-16%]">
               <h1 className="font-bold text-lg md:text-xl">Email Us</h1>
-              <p className="text-base mt-2 underline md:text-lg">
+              <a
+                href="mailto: hello@melangedigital.in"
+                className="text-base mt-2 underline md:text-lg"
+              >
                 hello@melangedigital.in
-              </p>
+              </a>
             </div>
             <div className="transform-none translate-x-0 lg:transform lg:translate-x-[-45%]">
               <h1 className="font-bold text-lg md:text-xl">Connect With Us</h1>
@@ -103,10 +111,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="my-4">
-              <h1 className="font-bold text-lg md:text-xl lg:ml-[47%]">
+              <h1 className="font-bold text-lg md:text-xl lg:ml-[46%] 2xl:ml-[51%]">
                 Address
               </h1>
-              <p className="w-64 md:w-full mt-2 text-base md:text-lg lg:transform lg:translate-x-[80%] lg:w-[60%]">
+              <p className="w-64 md:w-full mt-2 text-base md:text-lg lg:transform lg:translate-x-[77%] 2xl:translate-x-[85%] lg:w-[60%]">
                 <a
                   href="https://www.google.com/maps/place/Lodha+Supremus,+Andheri/@19.4280124,68.8564316,9z/data=!4m6!3m5!1s0x3be7c9fbdc277255:0xc0d0f6390ccdf263!8m2!3d19.1220835!4d72.8664415!16s%2Fg%2F11fl9j2bpk?entry=ttu"
                   target="_blank"

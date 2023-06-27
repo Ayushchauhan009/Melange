@@ -52,7 +52,7 @@ const Footer = () => {
 
           {/* Right section */}
           <div>
-            <div className="text-white mt-8 w-full md:mt-0 lg:-mt-[38%] lg:ml-32 lg:transform quick-links lg:translate-x-[32%]">
+            <div className="text-white mt-8 w-full md:mt-0 lg:-mt-[30%] lg:ml-32 lg:transform quick-links lg:translate-x-[32%]">
               <h1 className="font-bold text-lg md:text-xl">Quick Links</h1>
               <div className="md:mt-0">
                 <div className="my-4 cursor-pointer md:text-lg font-semibold">
@@ -76,13 +76,18 @@ const Footer = () => {
           <div className="text-white lg:pl-36 mt-8 md:mt-0 md:ml-auto flex flex-col lg:items-end md:w-1/2 lg:w-auto">
             <div className="lg:transform lg:translate-x-[-58%]">
               <h1 className="font-bold text-lg md:text-xl">Call Us</h1>
-              <p className="text-base md:text-lg mt-2">+91 7700974123</p>
+              <a href="tel:+917700974123" className="text-base md:text-lg mt-2">
+                +91 7700974123
+              </a>
             </div>
             <div className="my-4 lg:transform lg:translate-x-[-16%]">
               <h1 className="font-bold text-lg md:text-xl">Email Us</h1>
-              <p className="text-base mt-2 underline md:text-lg">
+              <a
+                href="mailto:hello@melangedigital.in"
+                className="text-base mt-2 underline md:text-lg"
+              >
                 hello@melangedigital.in
-              </p>
+              </a>
             </div>
             <div className="transform-none translate-x-0 lg:transform lg:translate-x-[-45%]">
               <h1 className="font-bold text-lg md:text-xl">Connect With Us</h1>

@@ -127,14 +127,14 @@ const Testimonials = () => {
         <h1 className="text-center text-md font-nunito md:text-4xl font-bold">
           Proud To Be Partnered With
         </h1>
-        <div className="partner-container py-12 px-32">
+        <div className="partner-container py-6 px-32">
           <div className="partner-scroll">
             <img src={googlePartener} alt="" className="partner-logo" />
             <img src={shopify} alt="" className="partner-logo" />
             <img src={meta} alt="" className="partner-logo" />
             <img src={mixpanel} alt="" className="partner-logo" />
             <img src={amazon} alt="" className="partner-logo" />
-            <img src={kylas} alt="" className="partner-logo" />
+            <img src={kylas} alt="" className="partner-logo w-1 h-2" />
             <img src={interakt} alt="" className="partner-logo" />
             <img src={proofhub} alt="" className="partner-logo" />
             <img src={hootsuite} alt="" className="partner-logo" />
@@ -144,7 +144,7 @@ const Testimonials = () => {
             <img src={meta} alt="" className="partner-logo" />
             <img src={mixpanel} alt="" className="partner-logo" />
             <img src={amazon} alt="" className="partner-logo" />
-            <img src={kylas} alt="" className="partner-logo" />
+            <img src={kylas} alt="" className="partner-logo w-1 h-2" />
             <img src={interakt} alt="" className="partner-logo" />
             <img src={proofhub} alt="" className="partner-logo proofhub" />
             <img src={hootsuite} alt="" className="partner-logo" />

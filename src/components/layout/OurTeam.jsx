@@ -135,34 +135,6 @@ const OurTeam = () => {
         <div className="media-element">
           <div
             className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
-              isFlipped3 ? "flipped3 " : "flippedBack3"
-            }`}
-            onClick={() => handleClick(3)}
-          >
-            <img
-              src={plus}
-              alt=""
-              className={`absolute image right-2 top-2 ${
-                isFlipped3
-                  ? "hidden  transform transition-all duration-75 "
-                  : "visible"
-              }`}
-            />
-          </div>
-          <div className="flex justify-between mt-2 items-center mr-2">
-            <h1 className="font-bold text-[18px]">Mrityunjay Kumar</h1>
-            <a href="#" className="">
-              <img src={linkedin2} alt="" className=" ml-1 h-5" />
-            </a>
-          </div>
-
-          <p className="text-white font-bold text-[14px]">
-            Chief Creative Officer
-          </p>
-        </div>
-        <div className="media-element">
-          <div
-            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped4 ? "flipped4 " : "flippedBack4"
             }`}
             onClick={() => handleClick(4)}

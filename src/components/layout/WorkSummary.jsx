@@ -50,7 +50,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
           {title}
         </motion.h1>
         <motion.p
-          className="text-[#1a1a1a] text-base w-auto 2xl:w-[100%] sm:text-md font-medium"
+          className="text-[#1a1a1a] text-base w-auto 2xl:w-[100%] sm:text-[18px] font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -64,15 +64,15 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
 
 const WorkSummary = () => {
   return (
-    <div className="font-nunito px-8 sm:px-16 lg:px-28 ">
-      <div className="py-8 sm:py-20">
+    <div className="font-nunito px-8 sm:px-16 xxl:py-24 2xl:py-48 lg:px-28 ">
+      <div className="pt-8 sm:pt-20 pb-8 sm:pb-8">
         <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
         <p className="font-medium text-base sm:text-lg pl-1 mt-2">
           We are on a mission to help start-ups and emerging brands thrive in
           the ever-changing digital eco-system.
         </p>
       </div>
-      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-32 2xl:gap-y-48">
+      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-44  2xl:gap-y-96 lg:mr-3">
         {works.map((work, index) => (
           <div
             key={index}

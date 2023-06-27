@@ -27,12 +27,12 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
         <div
           className={`overlay ${
             isHovered ? "active" : ""
-          } lg:w-[90%] 2xl:w-[80%]`}
+          } lg:w-[100%] 2xl:w-[100%]`}
         ></div>
         <motion.img
           src={icon}
           alt=""
-          className="w-full h-auto lg:w-[90%] transition-all duration-300 transform-gpu"
+          className="w-full h-auto lg:w-[100%] transition-all duration-300 transform-gpu"
           style={{
             scale: isHovered ? 1 : 1,
           }}
@@ -51,7 +51,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
           {title}
         </motion.h1>
         <motion.p
-          className="text-[#1a1a1a] text-base sm:text-md lg:w-[90%] font-medium"
+          className="text-[#1a1a1a] text-base sm:text-[18px] lg:w-[100%] font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -94,10 +94,10 @@ const WorkSummary = () => {
         );
 
   return (
-    <div className="font-nunito px-8 sm:px-16 lg:px-28 mb-16 lg:py-16">
+    <div className="font-nunito px-8 sm:px-16 lg:px-28 mb-20 lg:pt-32 lg:pb-48">
       <div className="py-14 sm:py-16">
         <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
-        <p className="font-medium text-base sm:text-xl mt-3 ml-1">
+        <p className="font-medium text-base sm:text-xl mt-3 ml-1 w-auto md:w-[80%]">
           Explore our diverse range of projects, each a testament to our
           commitment and expertise in delivering holistic digital solutions for
           our clients.
@@ -120,7 +120,7 @@ const WorkSummary = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-32 2xl:gap-y-48 ">
+      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-64 2xl:gap-y-48 lg:mr-3">
         {filteredWorks.map((work, index) => (
           <div
             key={index}

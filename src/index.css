@@ -621,31 +621,6 @@
 }
 
 /* Media Queries */
-@media (max-width: 595px) {
-  .media-scroller {
-    grid-auto-flow: row;
-    grid-auto-columns: 120%;
-    justify-content: center;
-  }
-}
-
-
-@media (max-width: 697px) {
-  .media-scroller {
-    grid-auto-columns: 43.4%;
-  }
-}
-
-@media (min-width: 972px) and (max-width: 1023px) {
-  .media-scroller {
-    grid-auto-columns: 31%;
-  }
-}
-@media (min-width: 700px) and (max-width: 971px) {
-  .media-scroller {
-    grid-auto-columns: 35.2%;
-  }
-}
 
 .media-scroller::-webkit-scrollbar {
   width: 1px; /* Set the width of the scrollbar */

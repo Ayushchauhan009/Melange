@@ -40,7 +40,7 @@ import { linkedin2, person1 } from "../assets/team";
 const works = [
   {
     icon: kalon,
-    tag1: "Brand Srategy",
+    tag1: "Brand Strategy",
     tag2: "Social Media",
     tag3: "E-Commerce",
     title: "Kalon",
@@ -60,7 +60,7 @@ const works = [
   },
   {
     icon: duvon,
-    tag1: "Brand Srategy",
+    tag1: "Brand Strategy",
     tag2: "Social Media",
     tag3: "E-Commerce",
     title: "Duvon Disney",
@@ -71,16 +71,16 @@ const works = [
   {
     icon: zee5,
     tag1: "B2B",
-    tag2: "Performance",
+    tag2: "Performance Marketing",
     tag3: "Social Media",
     title: "Zee5",
     description:
       "Launched a B2B campaign targeting SMEs that garnered 400+ client signups and generated an advertising revenue of 90+ crores PAN India.",
-    path: "/zee5",
+    path: "../components/pages/Casestudies/Zee5.jsx",
   },
   {
     icon: makemytrip,
-    tag1: "Performance",
+    tag1: "Performance Marketing",
     tag2: "Social Media",
     tag3: "Activations",
     title: "MakeMyTrip Holidays",
@@ -90,9 +90,9 @@ const works = [
   },
   {
     icon: sportz,
-    tag1: "Brand Building",
-    tag2: "Media Planning & Buying",
-    tag3: "Performance",
+    tag1: "Thought Leadership",
+    tag2: "Performance Marketing",
+    tag3: "",
     title: "Sportz Village XP",
     description:
       "Drove B2B lead generation and thought leadership for Sports Marketing, securing 7 contracts with an ROI of INR 2 crore in just 2 months.",
@@ -354,7 +354,7 @@ const workpage = [
   {
     icon: zee5,
     tag1: "B2B",
-    tag2: "Performance",
+    tag2: "Performance Marketing",
     tag3: "Social Media",
     title: "Zee5",
     description:
@@ -382,24 +382,6 @@ const workpage = [
   },
 
   {
-    icon: activeclub,
-    tag1: "Social Media",
-    tag2: "Performance Marketing",
-    tag3: "Influencer Marketing",
-    title: "Active Club",
-    description:
-      "A reach of over 3 million was achieved, and 10,000 subscriptions were secured in 2 months through targeted performance marketing, influencer marketing, and social media.",
-  },
-  {
-    icon: kunalrathod,
-    tag1: "Website Development",
-    tag2: "SEO",
-    tag3: "SEM",
-    title: "Kunal Rathod",
-    description:
-      "The implementation of automation optimized the website, leading to over 25 organic appointments and 50 appointments through paid campaigns per week.",
-  },
-  {
     icon: proportunity,
     tag1: "Brand Strategy",
     tag2: "Website Development",
@@ -417,6 +399,24 @@ const workpage = [
     description:
       "Successfully increased brand awareness and recall across offline stores and digital channels by designing marketing collateral and merchandise that aligned with the brand's personality",
   },
+  {
+    icon: activeclub,
+    tag1: "Social Media",
+    tag2: "Performance Marketing",
+    tag3: "Influencer Marketing",
+    title: "Active Club",
+    description:
+      "A reach of over 3 million was achieved, and 10,000 subscriptions were secured in 2 months through targeted performance marketing, influencer marketing, and social media.",
+  },
+  {
+    icon: kunalrathod,
+    tag1: "Website Development",
+    tag2: "SEO",
+    tag3: "SEM",
+    title: "Kunal Rathod",
+    description:
+      "The implementation of automation optimized the website, leading to over 25 organic appointments and 50 appointments through paid campaigns per week.",
+  },
 
   {
     icon: makemytrip,
@@ -429,9 +429,9 @@ const workpage = [
   },
   {
     icon: sportz,
-    tag1: "Brand Building",
-    tag2: "Media Planning & Buying",
-    tag3: "Performance",
+    tag1: "Thought Leadership",
+    tag2: "Performance Marketing",
+    tag3: "",
     title: "Sportz Village XP",
     description:
       "Drove B2B lead generation and thought leadership for Sports Marketing, securing 7 contracts with an ROI of INR 2 crore in just 2 months. ",

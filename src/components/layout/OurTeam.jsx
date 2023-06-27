@@ -5,6 +5,7 @@ import {
   person3,
   person4,
   person5,
+  person6,
   person7,
   person8,
   person10,
@@ -15,15 +16,49 @@ import {
 
 const OurTeam = () => {
   const [isFlipped1, setIsFlipped1] = useState(false);
-
-  const handleClick1 = () => {
-    setIsFlipped1(!isFlipped1);
-  };
-
   const [isFlipped2, setIsFlipped2] = useState(false);
+  const [isFlipped3, setIsFlipped3] = useState(false);
+  const [isFlipped4, setIsFlipped4] = useState(false);
+  const [isFlipped5, setIsFlipped5] = useState(false);
+  const [isFlipped6, setIsFlipped6] = useState(false);
+  const [isFlipped7, setIsFlipped7] = useState(false);
+  const [isFlipped8, setIsFlipped8] = useState(false);
+  const [isFlipped9, setIsFlipped9] = useState(false);
+  const [isFlipped10, setIsFlipped10] = useState(false);
 
-  const handleClick2 = () => {
-    setIsFlipped2(!isFlipped2);
+  const handleClick = (photoIndex) => {
+    switch (photoIndex) {
+      case 1:
+        setIsFlipped1(!isFlipped1);
+        break;
+      case 2:
+        setIsFlipped2(!isFlipped2);
+        break;
+      case 3:
+        setIsFlipped3(!isFlipped3);
+        break;
+      case 4:
+        setIsFlipped4(!isFlipped4);
+        break;
+      case 5:
+        setIsFlipped5(!isFlipped5);
+        break;
+      case 6:
+        setIsFlipped6(!isFlipped6);
+        break;
+      case 7:
+        setIsFlipped7(!isFlipped7);
+        break;
+      case 8:
+        setIsFlipped8(!isFlipped8);
+        break;
+      case 9:
+        setIsFlipped9(!isFlipped9);
+        break;
+      case 10:
+        setIsFlipped10(!isFlipped10);
+        break;
+    }
   };
 
   return (
@@ -46,7 +81,7 @@ const OurTeam = () => {
             className={`w-auto h-64 bg-contain items-center flex justify-center ${
               isFlipped1 ? "flipped1 " : "flippedBack1"
             }`}
-            onClick={handleClick1}
+            onClick={() => handleClick(1)}
           >
             <img
               src={plus}
@@ -75,7 +110,7 @@ const OurTeam = () => {
             className={`w-auto h-64 bg-contain items-center flex justify-center ${
               isFlipped2 ? "flipped2 " : "flippedBack2"
             }`}
-            onClick={handleClick2}
+            onClick={() => handleClick(2)}
           >
             <img
               src={plus}
@@ -98,6 +133,7 @@ const OurTeam = () => {
             Chief Creative Officer
           </p>
         </div>
+
         <div className="media-element">
           <img src={person4} alt="" />
           <h1 className="font-bold text-[18px]">Mrityunjay Kumar</h1>

@@ -852,3 +852,15 @@
   transition: all 0.5s ease-in-out;
   background-image: url("./assets/team/SUFIYAN.jpg");
 }
+
+
+.image{
+  width: 8%;
+  transition: transform 0.7 ease-in;
+  transform-origin: top right;
+}
+
+.parent:hover .image {
+  width: 9%;
+  transform: scale(1);
+}

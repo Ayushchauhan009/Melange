@@ -78,7 +78,7 @@ const OurTeam = () => {
       <div className="media-scroller">
         <div className={`media-element`}>
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex justify-center parent ${
               isFlipped1 ? "flipped1 " : "flippedBack1"
             }`}
             onClick={() => handleClick(1)}
@@ -86,10 +86,8 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
-                isFlipped1
-                  ? "hidden  transform transition-all duration-75 "
-                  : "visible"
+              className={`absolute image right-2 top-2 ${
+                isFlipped1 ? "hidden  " : "visible"
               }`}
             />
           </div>
@@ -107,7 +105,7 @@ const OurTeam = () => {
         </div>
         <div className={`media-element `}>
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped2 ? "flipped2 " : "flippedBack2"
             }`}
             onClick={() => handleClick(2)}
@@ -115,7 +113,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 image top-2 ${
                 isFlipped2
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -136,7 +134,7 @@ const OurTeam = () => {
 
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped3 ? "flipped3 " : "flippedBack3"
             }`}
             onClick={() => handleClick(3)}
@@ -144,7 +142,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute image right-2 top-2 ${
                 isFlipped3
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -164,7 +162,7 @@ const OurTeam = () => {
         </div>
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped4 ? "flipped4 " : "flippedBack4"
             }`}
             onClick={() => handleClick(4)}
@@ -172,7 +170,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 image top-2 ${
                 isFlipped4
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -193,7 +191,7 @@ const OurTeam = () => {
         </div>
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center parent flex justify-center ${
               isFlipped5 ? "flipped5 " : "flippedBack5"
             }`}
             onClick={() => handleClick(5)}
@@ -201,7 +199,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 image top-2 ${
                 isFlipped5
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -220,7 +218,7 @@ const OurTeam = () => {
 
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped6 ? "flipped6 " : "flippedBack6"
             }`}
             onClick={() => handleClick(6)}
@@ -228,7 +226,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 top-2 image ${
                 isFlipped6
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -251,7 +249,7 @@ const OurTeam = () => {
 
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped7 ? "flipped7 " : "flippedBack7"
             }`}
             onClick={() => handleClick(7)}
@@ -259,7 +257,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 image top-2 ${
                 isFlipped7
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -283,7 +281,7 @@ const OurTeam = () => {
 
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped8 ? "flipped8 " : "flippedBack8"
             }`}
             onClick={() => handleClick(8)}
@@ -291,7 +289,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 image top-2 ${
                 isFlipped8
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -316,7 +314,7 @@ const OurTeam = () => {
 
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped9 ? "flipped9 " : "flippedBack9"
             }`}
             onClick={() => handleClick(9)}
@@ -324,7 +322,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 image top-2 ${
                 isFlipped9
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"
@@ -348,7 +346,7 @@ const OurTeam = () => {
 
         <div className="media-element">
           <div
-            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+            className={`w-auto h-64 bg-contain items-center flex parent justify-center ${
               isFlipped10 ? "flipped10 " : "flippedBack10"
             }`}
             onClick={() => handleClick(10)}
@@ -356,7 +354,7 @@ const OurTeam = () => {
             <img
               src={plus}
               alt=""
-              className={`absolute right-2 top-2 ${
+              className={`absolute right-2 image top-2 ${
                 isFlipped10
                   ? "hidden  transform transition-all duration-75 "
                   : "visible"

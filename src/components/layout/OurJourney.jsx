@@ -36,36 +36,29 @@ const OurJourney = () => {
         Our Journey
       </h1>
       <div className="flex flex-col md:flex-row justify-evenly items-center multiverse-text">
-        <div className="flex flex-col justify-evenly mt-8 md:mt-0">
-          <div className="text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
-              <CountingNumber value={51} duration={2} /> <span>+</span>
-            </h1>
-            <p className="font-bold text-xl md:text-2xl">Clients</p>
-          </div>
-          <div className="mt-8 md:mt-28 text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
-              <CountingNumber value={2} duration={2} /> <span>BN+</span>
-            </h1>
-            <p className="font-bold text-xl md:text-2xl">Reach</p>
-          </div>
+        <div className="text-center">
+          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
+            <CountingNumber value={51} duration={2} /> <span>+</span>
+          </h1>
+          <p className="font-bold text-xl md:text-2xl">Clients</p>
         </div>
-        <div>
-          <img src={midimage} alt="" className="mt-8 md:mt-0" />
+        <div className=" text-center">
+          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
+            <CountingNumber value={2} duration={2} /> <span>BN+</span>
+          </h1>
+          <p className="font-bold text-xl md:text-2xl">Reach</p>
         </div>
-        <div>
-          <div className="text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
-              <CountingNumber value={101} duration={2} /> <span>+</span>
-            </h1>
-            <p className="font-bold text-xl md:text-2xl">Media Spends</p>
-          </div>
-          <div className="mt-8 md:mt-28 text-center">
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
-              <CountingNumber value={252} duration={3} /> <span>+</span>
-            </h1>
-            <p className="font-bold text-xl md:text-2xl">Campaigns executed</p>
-          </div>
+        <div className="text-center">
+          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
+            <CountingNumber value={101} duration={2} /> <span>+</span>
+          </h1>
+          <p className="font-bold text-xl md:text-2xl">Media Spends</p>
+        </div>
+        <div className="text-center">
+          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-5xl">
+            <CountingNumber value={252} duration={3} /> <span>+</span>
+          </h1>
+          <p className="font-bold text-xl md:text-2xl">Campaigns executed</p>
         </div>
       </div>
     </div>

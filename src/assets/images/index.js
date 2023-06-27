@@ -73,8 +73,10 @@ import kylas from "./kylas.png";
 import interakt from "./interakt.png";
 import proofhub from "./proofHub.png";
 import hootsuite from "./hootsuite.png";
+import costa from "./costa.png";
 
 export {
+  costa,
   interakt,
   proofhub,
   hootsuite,

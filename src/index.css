@@ -604,23 +604,48 @@
 
 
 
-.media-scroller{
+.media-scroller {
   display: grid;
   grid-auto-flow: column;
   gap: 1.5rem;
   overflow-x: auto;
-  
   grid-auto-columns: 21%;
   overscroll-behavior-inline: contain;
   padding: 0 1rem 1rem;
 }
 
-.media-element{
+.media-element {
   object-fit: contain;
   padding: 0.2rem;
   gap: 0.3rem;
 }
 
+/* Media Queries */
+@media (max-width: 595px) {
+  .media-scroller {
+    grid-auto-flow: row;
+    grid-auto-columns: 120%;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 697px) {
+  .media-scroller {
+    grid-auto-columns: 43.4%;
+  }
+}
+
+@media (min-width: 972px) and (max-width: 1023px) {
+  .media-scroller {
+    grid-auto-columns: 31%;
+  }
+}
+@media (min-width: 700px) and (max-width: 971px) {
+  .media-scroller {
+    grid-auto-columns: 35.2%;
+  }
+}
 
 .media-scroller::-webkit-scrollbar {
   width: 1px; /* Set the width of the scrollbar */
@@ -703,14 +728,14 @@
 .flipped3{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person3.png");
   
 }
 
 .flippedBack3{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/mritunjaysir.jpg");
 }
 
 
@@ -720,14 +745,14 @@
 .flipped4{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person4.png");
   
 }
 
 .flippedBack4{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/jasonsir.jpg");
 }
 
 
@@ -736,14 +761,14 @@
 .flipped5{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person5.png");
   
 }
 
 .flippedBack5{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/jatinsir.jpg");
 }
 
 
@@ -752,14 +777,14 @@
 .flipped6{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person6.png");
   
 }
 
 .flippedBack6{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/ekatmam.jpg");
 }
 
 
@@ -768,14 +793,14 @@
 .flipped7{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person7.png");
   
 }
 
 .flippedBack7{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/Simranjeet.png");
 }
 
 
@@ -784,7 +809,7 @@
 .flipped8{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person8.png");
   
 }
 
@@ -801,14 +826,14 @@
 .flipped9{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person9.png");
   
 }
 
 .flippedBack9{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/sanchitchaphekar.jpg");
 }
 
 
@@ -818,12 +843,12 @@
 .flipped10{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person10.png");
   
 }
 
 .flippedBack10{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/SUFIYAN.jpg");
 }

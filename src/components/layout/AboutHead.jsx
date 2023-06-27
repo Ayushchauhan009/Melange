@@ -13,7 +13,7 @@ import {
 
 const AboutHead = () => {
   return (
-    <div className="py-12 md:py-24 font-nunito">
+    <div className="py-12 md:py-40 font-nunito">
       <div className=" px-4 md:px-24">
         <div className="w-auto md:w-[84%] lg:px-4">
           <h1 className="text-2xl md:text-4xl font-bold">About Us</h1>
@@ -37,38 +37,46 @@ const AboutHead = () => {
       </div>
       <div className="flex flex-col md:flex-row justify-around pt-8 md:pt-16 mr-0 lg:mr-6 items-center">
         <div className="w-full md:w-1/3">
-          <h1 className="multiverse-text font-extrabold text-lg md:text-xl">
+          <h1 className="multiverse-text font-extrabold text-lg md:text-2xl">
             We swear by the following principles
           </h1>
           <p className="flex items-center font-bold mt-4 md:mt-9">
             <img src={zoom} alt="" />
-            <span className="ml-2 md:ml-4">Devil is in the details</span>
+            <span className="ml-2 md:ml-8 text-[18px]">
+              Devil is in the details
+            </span>
           </p>
           <p className="flex items-center font-bold my-4 md:my-8">
             <img src={rotatearrow} alt="" className="w-auto h-auto" />
-            <span className="ml-2 md:ml-4">
+            <span className="ml-2 md:ml-8 text-[18px]">
               All great ideas start with a scribble{" "}
             </span>
           </p>
           <p className="flex items-center font-bold my-4 md:my-8">
             <img src={book} alt="" />
-            <span className="ml-2 md:ml-4">Learning is the only constant</span>
+            <span className="ml-2 md:ml-8 text-[18px]">
+              Learning is the only constant
+            </span>
           </p>
         </div>
         <div className="w-full md:w-1/3">
           <p className="flex items-center font-bold mt-4 md:mt-16">
             <img src={time} alt="" />
-            <span className="ml-2 md:ml-4 ">
+            <span className="ml-2 md:ml-8 text-[18px]">
               Building blueprints that are future ready
             </span>
           </p>
           <p className="flex items-center font-bold my-4 md:my-8">
             <img src={nums} alt="" />
-            <span className="ml-2 md:ml-4">Numbers are our best teachers</span>
+            <span className="ml-2 md:ml-8 text-[18px]">
+              Numbers are our best teachers
+            </span>
           </p>
           <p className="flex items-center font-bold my-4 md:my-8">
             <img src={techHand} alt="" />
-            <span className="ml-2 md:ml-4">Technology is the future</span>
+            <span className="ml-2 md:ml-8 text-[18px]">
+              Technology is the future
+            </span>
           </p>
         </div>
       </div>

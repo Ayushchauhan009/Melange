@@ -135,91 +135,247 @@ const OurTeam = () => {
         </div>
 
         <div className="media-element">
-          <img src={person4} alt="" />
-          <h1 className="font-bold text-[18px]">Mrityunjay Kumar</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped3 ? "flipped3 " : "flippedBack3"
+            }`}
+            onClick={() => handleClick(3)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped3
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Mrityunjay Kumar</h1>
+            <a href="#" className="">
+              <img src={linkedin2} alt="" className=" ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">
             Chief Creative Officer
           </p>
-          <a href="#" className="w-2">
-            <img src={linkedin2} alt="" className=" ml-1 h-5" />
-          </a>
         </div>
         <div className="media-element">
-          <img src={person5} alt="" />
-          <h1 className="font-bold text-[18px]">Jason Dias</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped4 ? "flipped4 " : "flippedBack4"
+            }`}
+            onClick={() => handleClick(4)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped4
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            {" "}
+            <h1 className="font-bold text-[18px]">Jason Dias</h1>
+            <a href="https://www.linkedin.com/in/jasondias01" target="_blank">
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">
             Director - Growth & Strategy
           </p>
-          <a href="https://www.linkedin.com/in/jasondias01" target="_blank">
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
         <div className="media-element">
-          <img src={person1} alt="" />
-          <h1 className="font-bold text-[18px]">Jatin Sevak</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped5 ? "flipped5 " : "flippedBack5"
+            }`}
+            onClick={() => handleClick(5)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped5
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Jatin Sevak</h1>
+            <a href="https://www.linkedin.com/in/jatinsevak" target="_blank">
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">Head - E-Commerce</p>
-          <a href="https://www.linkedin.com/in/jatinsevak" target="_blank">
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
+
         <div className="media-element">
-          <img src={person7} alt="" />
-          <h1 className="font-bold text-[18px]">Ekatrina Bolinjkar</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped6 ? "flipped6 " : "flippedBack6"
+            }`}
+            onClick={() => handleClick(6)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped6
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Ekatrina Bolinjkar</h1>
+            <a
+              href="https://www.linkedin.com/in/ekaterina-bolinjkar-8bb33720"
+              target="_blank"
+            >
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
           <p className="text-white font-bold text-[14px]">
             Head - HR & Analytics
           </p>
-          <a
-            href="https://www.linkedin.com/in/ekaterina-bolinjkar-8bb33720"
-            target="_blank"
-          >
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
+
         <div className="media-element">
-          <img src={person8} alt="" />
-          <h1 className="font-bold text-[18px]">Simranjeet Dubey</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped7 ? "flipped7 " : "flippedBack7"
+            }`}
+            onClick={() => handleClick(7)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped7
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Simranjeet Dubey</h1>
+            <a
+              href="https://www.linkedin.com/in/simranjeetdubey"
+              target="_blank"
+            >
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">
             Senior Brand Strategist
           </p>
-          <a href="https://www.linkedin.com/in/simranjeetdubey" target="_blank">
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
+
         <div className="media-element">
-          <img src={person1} alt="" />
-          <h1 className="font-bold text-[18px]">Pranjali Vartak</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped8 ? "flipped8 " : "flippedBack8"
+            }`}
+            onClick={() => handleClick(8)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped8
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            {" "}
+            <h1 className="font-bold text-[18px]">Pranjali Vartak</h1>
+            <a
+              href="https://www.linkedin.com/in/pranjali-vartak"
+              target="_blank"
+            >
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">
             Manager - Brand & Content Marketing
           </p>
-          <a href="https://www.linkedin.com/in/pranjali-vartak" target="_blank">
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
+
         <div className="media-element">
-          <img src={person9} alt="" />
-          <h1 className="font-bold text-[18px]">Sanchit Chaphekar</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped9 ? "flipped9 " : "flippedBack9"
+            }`}
+            onClick={() => handleClick(9)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped9
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Sanchit Chaphekar</h1>
+            <a
+              href="https://www.linkedin.com/in/sanchit-chaphekar"
+              target="_blank"
+            >
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">
             Assistant Manager- Growth & Performance Marketing
           </p>
-          <a
-            href="https://www.linkedin.com/in/sanchit-chaphekar"
-            target="_blank"
-          >
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
+
         <div className="media-element">
-          <img src={person10} alt="" />
-          <h1 className="font-bold text-[18px]">Sufiyan Yahiya</h1>
+          <div
+            className={`w-auto h-64 bg-contain items-center flex justify-center ${
+              isFlipped10 ? "flipped10 " : "flippedBack10"
+            }`}
+            onClick={() => handleClick(10)}
+          >
+            <img
+              src={plus}
+              alt=""
+              className={`absolute right-2 top-2 ${
+                isFlipped10
+                  ? "hidden  transform transition-all duration-75 "
+                  : "visible"
+              }`}
+            />
+          </div>
+          <div className="flex justify-between mt-2 items-center mr-2">
+            <h1 className="font-bold text-[18px]">Sufiyan Yahiya</h1>
+            <a
+              href="https://www.linkedin.com/in/mohammed-sufiyan-yahiya-57466b176"
+              target="_blank"
+            >
+              <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
+            </a>
+          </div>
+
           <p className="text-white font-bold text-[14px]">
             Senior Graphic Designer
           </p>
-          <a
-            href="https://www.linkedin.com/in/mohammed-sufiyan-yahiya-57466b176"
-            target="_blank"
-          >
-            <img src={linkedin2} alt="" className="w-5 ml-1 h-5" />
-          </a>
         </div>
       </div>
     </div>

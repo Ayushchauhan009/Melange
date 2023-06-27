@@ -33,6 +33,7 @@ import {
   LT,
   connect2cloud,
   proportunityImage,
+  costa,
 } from "../assets/images";
 import { linkedin2, person1 } from "../assets/team";
 
@@ -330,7 +331,7 @@ const workpage = [
     tag3: "E-Commerce",
     title: "Kalon",
     description:
-      "Executed a D2C and marketplace strategy along with rebranding and packaging resulting in a sales revenue of 7+ Crores in USA, Singapore and India.",
+      "Achieved 7+ crores in sales revenue across USA, Singapore, and India through D2C and marketplace strategies, alongside rebranding and packaging design enhancements.",
   },
   {
     icon: dhruvak,
@@ -339,8 +340,47 @@ const workpage = [
     tag3: "Social Media",
     title: "Dhruvak",
     description:
-      "Launched the brand in B2C space with an all encompassing media strategy including digital ads, social media promotions, direct marketing, digital  webinars garnering a reach of over 20+ Million.",
+      "B2C brand launch achieved 20+ million reach through a comprehensive media strategy, including digital ads, social media promotions, direct marketing, and webinars.",
   },
+  {
+    icon: duvon,
+    tag1: "Brand Strategy",
+    tag2: "Social Media",
+    tag3: "E-Commerce",
+    title: "Duvon Disney",
+    description:
+      "Successful brand launch on 7 prominent e-commerce marketplaces generating a revenue of 25 lakhs in the first 6 months.",
+  },
+  {
+    icon: zee5,
+    tag1: "B2B",
+    tag2: "Performance",
+    tag3: "Social Media",
+    title: "Zee5",
+    description:
+      "Launched a B2B campaign targeting SMEs that garnered 400+ client signups generating an advertising revenue of 90+ crores PAN India.",
+  },
+
+  {
+    icon: costa,
+    tag1: "Brand Strategy",
+    tag2: "Social Media",
+    tag3: "Website Development",
+    title: "Costa Cruises",
+    description:
+      "Costa Cruises garnered over 60 press coverages across India, gaining widespread media attention. Additionally, a remarkable 40% increase in social media followers within just 3 days of the launch.      ",
+  },
+
+  {
+    icon: proportunityImage,
+    tag1: "Performance Marketing",
+    tag2: "Website Development",
+    tag3: "Design",
+    title: "Proportunity",
+    description:
+      "Successfully increased brand awareness and recall by designing marketing collateral and merchandise that aligned with the brand's personality. Additionally, quality leads were delivered through targeted ads and website optimization.      ",
+  },
+
   {
     icon: activeclub,
     tag1: "Social Media",
@@ -358,25 +398,6 @@ const workpage = [
     title: "Kunal Rathod",
     description:
       "The implementation of automation optimized the website, leading to over 25 organic appointments and 50 appointments through paid campaigns per week.",
-  },
-
-  {
-    icon: makemytrip,
-    tag1: "Performance",
-    tag2: "Social Media",
-    tag3: "Content Marketing",
-    title: "MakeMyTrip Holidays",
-    description:
-      "Executed a performance marketing strategy across social media and Google with a 20% increase in conversion rate and generated revenue of 1.3 crores in 2 months.",
-  },
-  {
-    icon: sportz,
-    tag1: "Brand Building",
-    tag2: "Media Planning & Buying",
-    tag3: "Performance",
-    title: "Sportz Village XP",
-    description:
-      "Led their B2B lead generation and thought leadership strategy resulting in Sports Marketing and won 7 contracts with an ROI of INR 2 crore in 2 months.",
   },
   {
     icon: proportunity,
@@ -398,40 +419,22 @@ const workpage = [
   },
 
   {
-    icon: duvon,
-    tag1: "Brand Strategy",
+    icon: makemytrip,
+    tag1: "Performance",
     tag2: "Social Media",
-    tag3: "E-Commerce",
-    title: "Duvon",
+    tag3: "Content Marketing",
+    title: "MakeMyTrip Holidays",
     description:
-      "Successfully launched the brand on 7 major e-commerce marketplaces resulting in a revenue of 25+ lakhs in the first 6 months.",
+      "Implemented a performance marketing strategy on social media and Google, achieving a 20% increase in the conversion rate and generating 1.3 crores in revenue within 2 months.      ",
   },
   {
-    icon: zee5,
-    tag1: "B2B",
-    tag2: "Performance",
-    tag3: "Social Media",
-    title: "Zee5",
+    icon: sportz,
+    tag1: "Brand Building",
+    tag2: "Media Planning & Buying",
+    tag3: "Performance",
+    title: "Sportz Village XP",
     description:
-      "Launched a B2B campaign targeting SMEs that garnered 400+ client signups generating an advertising revenue of 90+ crores PAN India.",
-  },
-  {
-    icon: proportunityImage,
-    tag1: "Brand Strategy",
-    tag2: "Website Development",
-    tag3: "Design",
-    title: "Proportunity",
-    description:
-      "The successful brand launch not only led to a remarkable 400% increase in website traffic but also positioned the brand as a leader in the sports consultation industry.",
-  },
-  {
-    icon: travelstop,
-    tag1: "Travel Stop",
-    tag2: "",
-    tag3: "",
-    title: "Travel Stop",
-    description:
-      "Successfully increased brand awareness and recall across offline stores and digital channels by designing marketing collateral and merchandise that aligned with the brand's personality",
+      "Drove B2B lead generation and thought leadership for Sports Marketing, securing 7 contracts with an ROI of INR 2 crore in just 2 months. ",
   },
 ];
 

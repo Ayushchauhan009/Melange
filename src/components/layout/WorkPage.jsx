@@ -25,12 +25,14 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
     >
       <div className="work">
         <div
-          className={`overlay ${isHovered ? "active" : ""} w-full 2xl:w-[85%]`}
+          className={`overlay ${
+            isHovered ? "active" : ""
+          } lg:w-[90%] 2xl:w-[80%]`}
         ></div>
         <motion.img
           src={icon}
           alt=""
-          className="w-full h-auto transition-all duration-300 transform-gpu"
+          className="w-full h-auto lg:w-[90%] transition-all duration-300 transform-gpu"
           style={{
             scale: isHovered ? 1 : 1,
           }}
@@ -49,7 +51,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
           {title}
         </motion.h1>
         <motion.p
-          className="text-[#1a1a1a] text-base sm:text-md font-medium"
+          className="text-[#1a1a1a] text-base sm:text-md lg:w-[90%] font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -118,7 +120,7 @@ const WorkSummary = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-24 2xl:gap-x-36 gap-y-32 2xl:gap-y-44 lg:pr-6">
+      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-32 2xl:gap-y-48 ">
         {filteredWorks.map((work, index) => (
           <div
             key={index}

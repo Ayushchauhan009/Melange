@@ -127,6 +127,83 @@ const Footer = () => {
           reserved.
         </p>
       </div>
+
+      {/* Media Queries */}
+      <style jsx>{`
+        @media (max-width: 767px) {
+          .pt-44 {
+            padding-top: 2rem;
+          }
+          .md:px-20 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+          .md:flex {
+            display: block;
+          }
+          .md:items-center {
+            align-items: start;
+          }
+          .md:flex-row {
+            flex-direction: column;
+          }
+          .lg:-mt-[40%] {
+            margin-top: -40%;
+          }
+          .lg:ml-32 {
+            margin-left: 2rem;
+          }
+          .quick-links {
+            transform: none;
+            translate-x: 0;
+            margin-top: 2rem;
+          }
+          .lg:translate-x-[32%] {
+            transform: none;
+            translate-x: 0;
+          }
+          .lg:pl-36 {
+            padding-left: 2.25rem;
+          }
+          .md:w-1/2 {
+            width: 100%;
+          }
+          .lg:items-end {
+            align-items: start;
+          }
+          .lg:w-auto {
+            width: 100%;
+          }
+          .lg:transform {
+            transform: none;
+          }
+          .lg:translate-x-[-58%] {
+            transform: none;
+            translate-x: 0;
+          }
+          .lg:translate-x-[-16%] {
+            transform: none;
+            translate-x: 0;
+          }
+          .lg:translate-x-[-45%] {
+            transform: none;
+            translate-x: 0;
+          }
+          .lg:ml-[47%] {
+            margin-left: 47%;
+          }
+          .lg:transform {
+            transform: none;
+          }
+          .lg:translate-x-[80%] {
+            transform: none;
+            translate-x: 0;
+          }
+          .lg:w-[60%] {
+            width: 100%;
+          }
+        }
+      `}</style>
     </div>
   );
 };

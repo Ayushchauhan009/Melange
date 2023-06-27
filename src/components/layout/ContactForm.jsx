@@ -5,7 +5,7 @@ import MapButton from "./MapButton";
 
 const ContactForm = () => {
   return (
-    <div className="py-12 px-6 md:px-12 lg:px-28 lg:py-24 md:20 sm:py-16 flex flex-col md:flex-row justify-evenly items-center font-nunito">
+    <div className="py-12 px-6 md:px-12 lg:px-28 lg:py-24  sm:py-16 flex flex-col md:flex-row justify-between items-center font-nunito">
       <div className="md:w-1/2 lg:w-1/2 xl:w-1/2 mb-8 md:mb-0">
         <h1 className="text-4xl font-bold w-[70%]">
           Let's connect to build something memorable for your{" "}

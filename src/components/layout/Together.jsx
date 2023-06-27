@@ -14,6 +14,20 @@ const Together = () => {
           </div>
         </div>
       </div>
+
+      {/* Media Queries */}
+      <style jsx>{`
+        @media (max-width: 767px) {
+          .together {
+            position: relative;
+            right: initial;
+            left: initial;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+          }
+        }
+      `}</style>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Whatwedo = () => {
 
   const handleLinkHover = (image) => {
     setBgImage(image);
-    setIsLinkHovered(true);
+    setIsLinkHovered(false);
   };
 
   const handleLinkMouseOut = () => {

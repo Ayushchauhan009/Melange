@@ -51,7 +51,7 @@ const Servicessummary = ({ handleLinkHover }) => {
           <motion.img
             src={linksData[hoveredIndex].imageSrc}
             alt={`Image ${hoveredIndex + 1}`}
-            className="w-full absolute sm:w-full h-auto sm:h-full z-0 md:mt-0 right-0 xxs:top-[1650px] lg:top-[1360px] xxl:top-[1480px] 2xl:top-[1690px] 3xl:top-[2100px]  transition-all ease-in-out duration-100"
+            className="w-full absolute sm:w-full h-auto sm:h-full z-0 md:mt-0 right-0 xxs:top-[1650px] xs:top-[1650px] sm:top-[1350px] md:top-[1000px] lg:top-[1060px] xl:top-[1340px] xxl:top-[1480px] 2xl:top-[1690px] 3xl:top-[2100px]  transition-all ease-in-out duration-100"
             style={{
               opacity: hoveredIndex !== null ? 1 : 0,
               translateY: hoveredIndex !== null ? 0 : -100,

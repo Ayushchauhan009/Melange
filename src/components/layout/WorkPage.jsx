@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { workpage } from "../../constants";
+import { Link } from "react-router-dom";
 
-const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
+const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -23,7 +24,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="work">
+      <Link to={path} className="work">
         <div
           className={`overlay ${
             isHovered ? "active" : ""
@@ -37,7 +38,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description }) => {
             scale: isHovered ? 1 : 1,
           }}
         />
-      </div>
+      </Link>
       <div className="flex py-1 text-[#5556ff] font-semibold mt-0">
         <p className="text-[12px] md:text-[14px] ">{tag1}</p>
         <p className="text-[12px] md:text-[14px] mx-3 md:mx-5">{tag2}</p>

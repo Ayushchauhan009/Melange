@@ -76,7 +76,7 @@ const works = [
     title: "Zee5",
     description:
       "Launched a B2B campaign targeting SMEs that garnered 400+ client signups and generated an advertising revenue of 90+ crores PAN India.",
-    path: "../components/pages/Casestudies/Zee5.jsx",
+    path: "/work/zee5",
   },
   {
     icon: makemytrip,
@@ -359,6 +359,7 @@ const workpage = [
     title: "Zee5",
     description:
       "Launched a B2B campaign targeting SMEs that garnered 400+ client signups generating an advertising revenue of 90+ crores PAN India.",
+    path: "/work/zee5",
   },
 
   {
@@ -375,7 +376,7 @@ const workpage = [
     icon: proportunityImage,
     tag1: "Performance Marketing",
     tag2: "Website Development",
-    tag3: "Design",
+    tag3: "Design Solutions",
     title: "Proportunity",
     description:
       "Successfully increased brand awareness and recall by designing marketing collateral and merchandise that aligned with the brand's personality. Additionally, quality leads were delivered through targeted ads and website optimization.      ",

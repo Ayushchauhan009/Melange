@@ -687,14 +687,14 @@
 .flipped2{
   transform: rotateY(180deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/SANKETSIR.jpg");
+  background-image: url("./assets/team/person2.png");
   
 }
 
 .flippedBack2{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Pranjali.jpg");
+  background-image: url("./assets/team/saswat.jpg");
 }
 
 
@@ -775,7 +775,7 @@
 .flippedBack7{
   transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
-  background-image: url("./assets/team/Simranjeet.png");
+  background-image: url("./assets/team/simranjeet.jpg");
 }
 
 

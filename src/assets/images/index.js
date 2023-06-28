@@ -74,8 +74,16 @@ import interakt from "./interakt.png";
 import proofhub from "./proofHub.png";
 import hootsuite from "./hootsuite.png";
 import costa from "./costa.png";
+import clients from "./client.png";
+import campaigns from "./campaigns.png";
+import reach from "./reach.png";
+import media from "./media.png";
 
 export {
+  clients,
+  campaigns,
+  reach,
+  media,
   costa,
   interakt,
   proofhub,

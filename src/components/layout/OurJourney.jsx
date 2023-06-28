@@ -31,36 +31,36 @@ const CountingNumber = ({ value, duration }) => {
 
 const OurJourney = () => {
   return (
-    <div className="font-nunito pb-64">
-      <h1 className="text-center font-bold text-4xl mt-20 mb-16 md:text-4xl lg:text-4xl">
+    <div className="font-nunito pb-10 md:pb-64">
+      <h1 className="text-center font-bold text-4xl mt-10 mb-8 md:text-5xl lg:text-6xl">
         Our Journey
       </h1>
-      <div className="flex flex-col md:flex-row justify-evenly items-center ">
-        <div className="text-center">
-          <img src={clients} alt="" className="mb-3  w-20 h-16" />
-          <h1 className="font-bold text-4xl md:text-4xl lg:text-4xl">
+      <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
+        <div className="text-center mb-10 md:mb-0">
+          <img src={clients} alt="" className="mb-3 w-20 h-16 mx-auto" />
+          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
             <CountingNumber value={51} duration={2} /> <span>+</span>
           </h1>
           <p className="font-bold text-xl md:text-xl">Clients</p>
         </div>
 
-        <div className="text-center">
-          <img src={media} alt="" className="ml-6 mb-0 w-20 h-20" />
-          <h1 className="font-bold text-4xl md:text-4xl lg:text-4xl">
+        <div className="text-center mb-10 md:mb-0">
+          <img src={media} alt="" className="mb-0 w-20 h-20 mx-auto" />
+          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
             <CountingNumber value={101} duration={2} /> <span>Cr+</span>
           </h1>
           <p className="font-bold text-xl md:text-xl">Media Spends</p>
         </div>
-        <div className=" text-center">
-          <img src={reach} alt="" className="ml-3 mb-3  w-20 h-16" />
-          <h1 className="font-bold text-4xl md:text-4xl lg:text-4xl">
+        <div className="text-center mb-10 md:mb-0">
+          <img src={reach} alt="" className="mb-3 w-20 h-16 mx-auto" />
+          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
             <CountingNumber value={2} duration={2} /> <span>Bn+</span>
           </h1>
           <p className="font-bold text-xl md:text-xl">Reach</p>
         </div>
         <div className="text-center">
-          <img src={campaigns} alt="" className="ml-14 mb-3 w-20 h-16" />
-          <h1 className="font-bold text-4xl md:text-4xl lg:text-4xl">
+          <img src={campaigns} alt="" className="mb-3 w-20 h-16 mx-auto" />
+          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
             <CountingNumber value={252} duration={3} /> <span>+</span>
           </h1>
           <p className="font-bold text-xl md:text-xl">Campaigns Executed</p>

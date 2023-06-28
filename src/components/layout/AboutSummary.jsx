@@ -6,13 +6,13 @@ const AboutSummary = () => {
   return (
     <div>
       <div>
-        <div className="flex flex-col-reverse md:flex-row justify-between items-center py-10 md:py-16 px-4 md:px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center py-10 md:py-16 px-4 md:px-6">
           <div className="w-full md:w-1/2 p-4 md:p-16">
             <Logo />
           </div>
           <div className="w-full md:w-1/2">
             <div>
-              <h1 className="multiverse-text text-3xl md:text-4xl pl-1 font-nunito font-extrabold">
+              <h1 className="multiverse-text text-2xl md:text-4xl pl-1 font-nunito font-extrabold">
                 Your Marketing Multiverse
               </h1>
               <p className="font-bold font-nunito mt-1 pl-2">

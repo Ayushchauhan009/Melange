@@ -31,13 +31,13 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
         <motion.img
           src={icon}
           alt=""
-          className="w-full h-auto  2xl:h-[80%] transition-all duration-300 transform-gpu "
+          className="w-full h-[70%] md:h-auto  2xl:h-[80%] transition-all duration-300 transform-gpu "
           style={{
             scale: isHovered ? 1 : 1,
           }}
         />
       </Link>
-      <div className="flex py-1 multiverse-text font-semibold mt-0">
+      <div className="flex py-1 multiverse-text font-bold xxs:text-[13px] lg:text-[16px] mt-2 sm:mt-0">
         <p>{tag1}</p>
         <p className="mx-5">{tag2}</p>
         <p>{tag3}</p>
@@ -64,7 +64,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
 
 const WorkSummary = () => {
   return (
-    <div className="font-nunito px-8 sm:px-16 xxl:py-24 2xl:py-48 lg:px-28 ">
+    <div className="font-nunito px-6 sm:px-16 xxl:py-24 2xl:py-48 lg:px-28 ">
       <div className="pt-8 sm:pt-20 pb-8 sm:pb-8">
         <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
         <p className="font-medium text-base sm:text-lg pl-1 mt-2">
@@ -72,7 +72,7 @@ const WorkSummary = () => {
           the ever-changing digital eco-system.
         </p>
       </div>
-      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-44  2xl:gap-y-96 lg:mr-3">
+      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-16 md:gap-y-44  2xl:gap-y-96 lg:mr-3">
         {works.map((work, index) => (
           <div
             key={index}

@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed bg-white z-50 shadow-md w-full">
-      <div className="flex justify-between  items-center px-4 sm:px-24 h-10 sm:h-[4.6rem] font-nunito">
+      <div className="flex justify-between  items-center px-4 sm:px-24 h-16 sm:h-[4.6rem] font-nunito">
         <div className="relative w-44 h-8 md:h-12 overflow-hidden">
           <Link to="/">
             <img
@@ -31,7 +31,7 @@ const Navbar = () => {
             {isMenuOpen ? (
               <RiCloseLine className="hamburger-icon" />
             ) : (
-              <RiMenu3Line className="hamburger-icon" />
+              <RiMenu3Line className="hamburger-icon w-10 h-8" />
             )}
           </button>
         </div>

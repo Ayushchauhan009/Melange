@@ -1,13 +1,25 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+
+import { useEffect } from "react";
 
 import { Home, Services, Works, About, Contact } from "./components/pages";
 
 import { Zee5 } from "./components/pages/Casestudies";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" Component={Home} />
         <Route path="/services" Component={Services} />
@@ -15,7 +27,6 @@ function App() {
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="/work/zee5" Component={Zee5} />
-
       </Routes>
     </BrowserRouter>
   );

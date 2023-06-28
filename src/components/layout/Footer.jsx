@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-[#1A1A1A] pt-10">
-      <div className="px-4 md:px-20 py-8 md:flex md:items-center justify-between font-nunito">
+      <div className="px-2 md:px-20 py-8 md:flex md:items-center justify-between font-nunito">
         {/* Left and Middle sections */}
         <div className="flex flex-col md:flex-row justify-between px-4 items-start md:items-center md:mb-0">
           {/* Left side */}

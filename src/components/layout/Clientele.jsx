@@ -4,7 +4,7 @@ import { clients } from "../../constants";
 const Client = ({ icon }) => {
   return (
     <div className="bg-[#fff] blocks shadow-lg">
-      <div className="flex justify-center items-center h-28 md:h-36 w-32 md:w-40">
+      <div className="flex justify-center items-center h-28 md:h-36 w-40 md:w-40">
         <img src={icon} alt="" className="w-24 md:w-24 h-auto invert" />
       </div>
     </div>
@@ -14,13 +14,13 @@ const Client = ({ icon }) => {
 const Clientele = () => {
   return (
     <div className="font-nunito pb-16 2xl:pb-12 bg-[#1a1a1a]  mt-40  xl:mt-56">
-      <div className="mt-16 px-4 py-8 md:py-16 md:px-24 lg:px-28 2xl:px-32">
+      <div className="mt-16 px-6 py-8 md:py-16 md:px-24 lg:px-28 2xl:px-32">
         <h1 className="text-[#fff] text-2xl md:text-3xl lg:text-4xl font-bold">
           Clientele
         </h1>
       </div>
-      <div className="px-4 md:px-8 lg:px-24">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-0 gap-y-10 mx-auto">
+      <div className="px-0 md:px-8 lg:px-24">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-0 gap-y-6 md:gap-y-10  mx-auto">
           {clients.map((client, index) => {
             return (
               <div key={index} className="flex justify-center">

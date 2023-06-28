@@ -72,9 +72,8 @@ const Home = () => {
       <div>
         <AboutSummary />
       </div>
-      <animated.div style={fadeOut}>
-        <Whatwedo />
-      </animated.div>
+      <Whatwedo />
+
       {/* Repeat the animated divs for other components */}
       <animated.div style={fadeOut}>
         <WorkSummary />

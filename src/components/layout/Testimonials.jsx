@@ -84,7 +84,7 @@ const Testimonials = () => {
   return (
     <div className="">
       <div>
-        <h2 className="font-bold font-nunito text-4xl text-center px-8 pt-16 pb-4 md:px-52">
+        <h2 className="font-bold font-nunito text-2xl md:text-4xl text-center px-9 pt-16 pb-4 md:px-52">
           What Our Clients Say About Us
         </h2>
         <div className="reviews flex flex-col md:flex-row justify-center ">
@@ -123,8 +123,8 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-      <div className="py-10 px-20">
-        <h1 className="text-center text-md font-nunito md:text-4xl font-bold">
+      <div className="py-10 px-9">
+        <h1 className="text-left text-2xl font-nunito md:text-4xl font-bold">
           Proud To Be Partnered With
         </h1>
         <div className="partner-container py-6 px-32">

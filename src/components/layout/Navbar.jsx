@@ -13,12 +13,12 @@ const Navbar = () => {
   return (
     <div className="fixed bg-white z-50 shadow-md w-full">
       <div className="flex justify-between  items-center px-4 sm:px-24 h-16 sm:h-[4.6rem] font-nunito">
-        <div className="relative w-44 h-8 md:h-12 overflow-hidden">
+        <div className="relative w-44 h-16 md:h-12 overflow-hidden">
           <Link to="/">
             <img
               src={logo}
               alt="Logo"
-              className="w-auto md:w-full h-8 md:h-full"
+              className="w-auto md:w-full h-10 mt-3 sm:mt-0 md:h-full"
             />
           </Link>
         </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
             aria-label="Toggle Menu"
           >
             {isMenuOpen ? (
-              <RiCloseLine className="hamburger-icon" />
+              <RiCloseLine className="hamburger-icon w-10 h-8" />
             ) : (
               <RiMenu3Line className="hamburger-icon w-10 h-8" />
             )}
@@ -84,13 +84,13 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="sm:hidden">
-          <div className="bg-[submit-bg] flex flex-col items-center py-20 justify-evenly h-screen font-extrabold ">
-            <div className="navbar-link cursor-pointer">
+          <div className="bg-[submit-bg] flex flex-col items-start pt-6 pl-4 hover:multiverse-text pb-20 justify-between h-[40%] font-medium">
+            <div className="navbar-link cursor-pointer ">
               <NavLink
                 to="/services"
                 activeClassName="active-link"
                 exact
-                className="nav-link text-[28px]"
+                className="nav-link text-[25px] my-8 "
               >
                 Services
               </NavLink>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 to="/work"
                 activeClassName="active-link"
                 exact
-                className="nav-link text-[28px]"
+                className="nav-link text-[25px] "
               >
                 Work
               </NavLink>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 to="/about"
                 activeClassName="active-link"
                 exact
-                className="nav-link text-[28px]"
+                className="nav-link text-[25px] py-4 "
               >
                 About Us
               </NavLink>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 to="/contact"
                 activeClassName="active-link"
                 exact
-                className="nav-link text-[28px]"
+                className="nav-link text-[25px] "
               >
                 Contact Us
               </NavLink>

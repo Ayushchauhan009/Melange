@@ -17,9 +17,10 @@ import {
 } from "../../assets/images";
 
 import { useMediaQuery } from "react-responsive";
+import { useSwipeable } from "react-swipeable";
 
 const Testimonials = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  // const [currentPage, setCurrentPage] = useState(1);
   const [reviews, setReviews] = useState([
     {
       id: 1,
@@ -61,20 +62,29 @@ const Testimonials = () => {
 
   const reviewsPerPage = useMediaQuery({ query: "(min-width: 768px)" }) ? 2 : 1;
   const totalPages = Math.ceil(reviews.length / reviewsPerPage);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handleSwipe = useSwipeable({
+    onSwipedLeft: () => nextPage(),
+    onSwipedRight: () => previousPage(),
+  });
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const nextPage = currentPage === totalPages ? 1 : currentPage + 1;
-      setCurrentPage(nextPage);
-    }, 5000);
+    const timer = setTimeout(nextPage, 5000);
 
     return () => {
       clearTimeout(timer);
     };
-  }, [currentPage, totalPages]);
+  }, [currentPage]);
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
+  const nextPage = () => {
+    const nextPage = currentPage === totalPages ? 1 : currentPage + 1;
+    setCurrentPage(nextPage);
+  };
+
+  const previousPage = () => {
+    const previousPage = currentPage === 1 ? totalPages : currentPage - 1;
+    setCurrentPage(previousPage);
   };
 
   const getPageReviews = () => {
@@ -89,30 +99,29 @@ const Testimonials = () => {
         <h2 className="font-bold font-nunito text-2xl md:text-4xl text-center px-9 pt-16 pb-4 md:px-52">
           What Our Clients Say About Us
         </h2>
-        <div className="reviews flex flex-col md:flex-row justify-center mx-4 sm:mx-0 min-h-96 sm:min-h-64">
+        <div
+          className="reviews flex flex-col md:flex-row justify-center mx-4 sm:mx-0 min-h-96 sm:min-h-64"
+          {...handleSwipe}
+        >
           {getPageReviews().map((review) => (
             <div
               key={review.id}
-              className="review  md:mx-4 my-6 px-4 py-6 w-full testimonial  rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
+              className="review md:mx-4 my-6 px-4 py-6 w-full testimonial rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
             >
-              <div className="flex flex-col sm:flex-row items-center  sm:items-start">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start">
                 <div className="mr-4 -mt-2">
-                  <img
-                    src={review.icon}
-                    alt=""
-                    className=" w-20 sm:w-80 h-16"
-                  />
+                  <img src={review.icon} alt="" className="w-20 sm:w-80 h-16" />
                 </div>
-                <div className="flex ">
+                <div className="flex">
                   <div className="flex">
                     <div className="flex flex-col items-center">
                       <h3 className="font-bold">{review.name}</h3>
                       <p className="font-semibold">{review.title}</p>
-                      <p className="mt-3 font-sm md:font-normal  ">
+                      <p className="mt-3 font-sm md:font-normal">
                         {review.review}
                       </p>
                     </div>
-                    <div className="ml-auto absolute sm:relative right-7 sm:top-0 sm:right-0 ">
+                    <div className="ml-auto absolute sm:relative right-7 sm:top-0 sm:right-0">
                       <img
                         src={review.comma}
                         alt=""

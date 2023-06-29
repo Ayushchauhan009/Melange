@@ -89,11 +89,11 @@ const Testimonials = () => {
         <h2 className="font-bold font-nunito text-2xl md:text-4xl text-center px-9 pt-16 pb-4 md:px-52">
           What Our Clients Say About Us
         </h2>
-        <div className="reviews flex flex-col md:flex-row justify-center ">
+        <div className="reviews flex flex-col md:flex-row justify-center mx-4 sm:mx-0 min-h-96 sm:min-h-64">
           {getPageReviews().map((review) => (
             <div
               key={review.id}
-              className="review md:mx-4 my-6 px-4 py-6 w-full testimonial max-h-96 sm:max-h-64 rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
+              className="review  md:mx-4 my-6 px-4 py-6 w-full testimonial  rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
             >
               <div className="flex flex-col sm:flex-row items-center  sm:items-start">
                 <div className="mr-4 -mt-2">
@@ -105,14 +105,14 @@ const Testimonials = () => {
                 </div>
                 <div className="flex ">
                   <div className="flex">
-                    <div>
+                    <div className="flex flex-col items-center">
                       <h3 className="font-bold">{review.name}</h3>
                       <p className="font-semibold">{review.title}</p>
-                      <p className="mt-3 font-sm md:font-normal w-auto ">
+                      <p className="mt-3 font-sm md:font-normal  ">
                         {review.review}
                       </p>
                     </div>
-                    <div className="ml-auto absolute sm:relative right-4  sm:top-0 sm:right-0 ">
+                    <div className="ml-auto absolute sm:relative right-7 sm:top-0 sm:right-0 ">
                       <img
                         src={review.comma}
                         alt=""

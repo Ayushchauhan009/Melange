@@ -10,8 +10,10 @@ import {
   image6,
   collage,
 } from "../../assets/images";
+import { useMediaQuery } from "react-responsive";
 
 const Servicessummary = ({ handleLinkHover }) => {
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const linksData = [
@@ -53,7 +55,9 @@ const Servicessummary = ({ handleLinkHover }) => {
           <motion.img
             src={linksData[hoveredIndex].imageSrc}
             alt={`Image ${hoveredIndex + 1}`}
-            className="w-full absolute sm:w-full h-auto sm:h-full z-0 md:mt-0 right-0 xxs:hidden sm:top-[1350px] md:top-[1000px] lg:top-[1060px] xl:top-[1340px] xxl:top-[1480px] 2xl:top-[1690px] 3xl:top-[2100px]  transition-all ease-in-out duration-100"
+            className={`w-full absolute sm:w-full h-auto sm:h-full z-0 md:mt-0 right-0 ${
+              isMobile ? "hidden" : "block"
+            } sm:top-[1350px] md:top-[1000px] lg:top-[1060px] xl:top-[1410px] xxl:top-[1480px] 2xl:top-[1690px] 3xl:top-[2100px]  transition-all ease-in-out duration-100`}
             style={{
               opacity: hoveredIndex !== null ? 1 : 0,
               translateY: hoveredIndex !== null ? 0 : -100,

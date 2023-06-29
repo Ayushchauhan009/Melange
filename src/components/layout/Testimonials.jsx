@@ -16,6 +16,8 @@ import {
   hootsuite,
 } from "../../assets/images";
 
+import { useMediaQuery } from "react-responsive";
+
 const Testimonials = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [reviews, setReviews] = useState([
@@ -57,7 +59,7 @@ const Testimonials = () => {
     },
   ]);
 
-  const reviewsPerPage = 2;
+  const reviewsPerPage = useMediaQuery({ query: "(min-width: 768px)" }) ? 2 : 1;
   const totalPages = Math.ceil(reviews.length / reviewsPerPage);
 
   useEffect(() => {
@@ -91,19 +93,33 @@ const Testimonials = () => {
           {getPageReviews().map((review) => (
             <div
               key={review.id}
-              className="review mx-0 md:mx-4 my-6 px-4 py-6 w-full testimonial rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
+              className="review md:mx-4 my-6 px-4 py-6 w-full testimonial max-h-96 sm:max-h-64 rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
             >
-              <div className="flex items-start">
+              <div className="flex flex-col sm:flex-row items-center  sm:items-start">
                 <div className="mr-4 -mt-2">
-                  <img src={review.icon} alt="" className="w-80 h-16" />
+                  <img
+                    src={review.icon}
+                    alt=""
+                    className=" w-20 sm:w-80 h-16"
+                  />
                 </div>
-                <div>
-                  <h3 className="font-bold">{review.name}</h3>
-                  <p className="font-semibold">{review.title}</p>
-                  <p className="mt-3 font-sm md:font-normal">{review.review}</p>
-                </div>
-                <div className="ml-auto">
-                  <img src={review.comma} alt="" className="w-32 h- -mt-3" />
+                <div className="flex ">
+                  <div className="flex">
+                    <div>
+                      <h3 className="font-bold">{review.name}</h3>
+                      <p className="font-semibold">{review.title}</p>
+                      <p className="mt-3 font-sm md:font-normal w-auto ">
+                        {review.review}
+                      </p>
+                    </div>
+                    <div className="ml-auto absolute sm:relative right-4  sm:top-0 sm:right-0 ">
+                      <img
+                        src={review.comma}
+                        alt=""
+                        className="w-6 sm:w-24 -mt-3"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -124,7 +140,7 @@ const Testimonials = () => {
         </div>
       </div>
       <div className="py-10 px-9">
-        <h1 className="text-left text-2xl font-nunito md:text-4xl font-bold">
+        <h1 className="text-left md:text-center text-2xl font-nunito md:text-4xl font-bold">
           Proud To Be Partnered With
         </h1>
         <div className="partner-container py-6 px-32">

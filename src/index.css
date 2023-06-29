@@ -460,7 +460,17 @@
 
 @media (max-width: 480px) {
   .partner-scroll {
-    animation: scroll-marquee 5s linear infinite;
+    animation: scroll-marq 10s linear infinite;
+  }
+}
+
+
+@keyframes scroll-marq {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-2800%);
   }
 }
 

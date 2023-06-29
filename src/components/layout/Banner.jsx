@@ -3,7 +3,7 @@ import { bannerVideo } from "../../assets/video";
 
 const Banner = () => {
   return (
-    <div className="w-full pt-16 md:w-1/2">
+    <div className="w-full pt-16 ">
       <div className="aspect-w-9 aspect-h-16 ">
         <video
           className="object-cover"

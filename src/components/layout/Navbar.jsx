@@ -13,12 +13,12 @@ const Navbar = () => {
   return (
     <div className="fixed bg-white z-50 shadow-md w-full">
       <div className="flex justify-between  items-center px-4 sm:px-24 h-16 sm:h-[4.6rem] font-nunito">
-        <div className="relative w-44 h-16 md:h-12 overflow-hidden">
+        <div className="relative w-44 h-16 md:h-12 overflow-hidden ">
           <Link to="/">
             <img
               src={logo}
               alt="Logo"
-              className="w-auto md:w-full h-10 mt-3 sm:mt-0 md:h-full"
+              className="w-auto md:w-full h-10 mt-3 sm:mt-0 md:h-full "
             />
           </Link>
         </div>

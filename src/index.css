@@ -461,7 +461,7 @@
 
 @media (max-width: 480px) {
   .partner-scroll {
-    animation: scroll-marq 10s linear infinite;
+    animation: scroll-marq 15s linear infinite;
   }
 }
 
@@ -640,6 +640,19 @@
 }
 
 /* Media Queries */
+
+@media (max-width: 480px) {
+  .media-scroller {
+    display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  overflow-x: auto;
+  grid-auto-columns: 81%;
+  overscroll-behavior-inline: contain;
+  padding: 0 1rem 1rem;
+  }
+}
+
 
 .media-scroller::-webkit-scrollbar {
   width: 1px; /* Set the width of the scrollbar */
@@ -857,4 +870,37 @@
 .parent:hover .image {
   width: 9%;
   transform: scale(1);
+}
+
+
+
+.workTogether{
+  background: linear-gradient(to right, rgba(56, 88, 255, 1), rgba(183, 69, 255, 1), rgba(217, 64, 255, 1));
+}
+
+/* Clientele Mobile CSS */
+
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Hide scrollbar for better appearance */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-animation {
+  animation: scroll 25s linear infinite;
 }

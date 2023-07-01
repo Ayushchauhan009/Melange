@@ -106,31 +106,44 @@ const Testimonials = () => {
           {getPageReviews().map((review) => (
             <div
               key={review.id}
-              className="review md:mx-4 my-6 px-4 py-6 w-full testimonial rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
+              className="review md:mx-4 my-6 px-4 py-8 w-full testimonial rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-56 xl:w-[28rem]"
             >
-              <div className="flex flex-col sm:flex-row items-center sm:items-start">
-                <div className="mr-4 -mt-2">
-                  <img src={review.icon} alt="" className="w-20 sm:w-80 h-16" />
-                </div>
-                <div className="flex">
-                  <div className="flex">
-                    <div className="flex flex-col items-center">
-                      <h3 className="font-bold">{review.name}</h3>
-                      <p className="font-semibold">{review.title}</p>
-                      <p className="mt-3 font-sm md:font-normal">
-                        {review.review}
-                      </p>
-                    </div>
-                    <div className="ml-auto absolute sm:relative right-7 sm:top-0 sm:right-0">
-                      <img
-                        src={review.comma}
-                        alt=""
-                        className="w-6 sm:w-24 -mt-3"
-                      />
-                    </div>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center">
+                <div className="flex flex-row md:flex-col items-start mx-4 md:mx-0">
+                  <img
+                    src={review.icon}
+                    alt=""
+                    className="w-20 sm:w-20 h-16 "
+                  />
+                  <div className="flex flex-col items-start ml-6 sm:ml-0 md:items-start">
+                    <h3 className="font-bold">{review.name}</h3>
+                    <p className="font-semibold">{review.title}</p>
                   </div>
                 </div>
+                <div
+                  className={`flex ${
+                    review.review.length > 100 ? "sm:flex-col" : "sm:flex"
+                  }`}
+                >
+                  <div className="ml-auto absolute sm:relative right-7 sm:top-0 sm:right-0">
+                    <img
+                      src={review.comma}
+                      alt=""
+                      className="w-6 sm:w-10 -mt-24 sm:-mt-16 ml-0 sm:ml-44"
+                    />
+                  </div>
+                  {review.review.length <= 100 && (
+                    <p className="mt-3 font-sm md:font-normal">
+                      {review.review}
+                    </p>
+                  )}
+                </div>
               </div>
+              {review.review.length > 100 && (
+                <div className="mt-3 font-sm md:font-normal">
+                  {review.review}
+                </div>
+              )}
             </div>
           ))}
         </div>

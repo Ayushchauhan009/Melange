@@ -58,8 +58,8 @@ const Form = () => {
 
   return (
     <div className="">
-      <div className="form-bg mx-14 mt-8 py-10 ">
-        <form onSubmit={handleSubmit} className=" lg:px-16 px-4 md:px-0">
+      <div className="form-bg mx-0 md:mx-14 mt-8 py-10 ">
+        <form onSubmit={handleSubmit} className=" lg:px-16 px-14 md:px-0">
           <div className="mb-4">
             <input
               type="text"

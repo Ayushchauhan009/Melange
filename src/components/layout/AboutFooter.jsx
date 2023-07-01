@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1A1A1A] px-8 pt-44">
-      <div className="px-4 md:px-20 py-8 md:flex md:items-center justify-between font-nunito">
+    <div className="bg-[#1A1A1A] px-8 pt-44 md:pt-0">
+      <div className="px-0 md:px-20 py-8 md:flex md:items-center justify-between font-nunito">
         {/* Left and Middle sections */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center md:mb-0">
           {/* Left side */}
@@ -21,7 +21,7 @@ const Footer = () => {
               <img src={melangeLogo2} alt="" className="mb-6 md:mb-0" />
             </Link>
             <div className="flex flex-col items-start md:my-4 md:w-[70%]">
-              <p className="font-bold text-white text-base md:text-lg">
+              <p className="font-bold text-white text-md md:text-lg">
                 Sign up for our{" "}
                 <span className="multiverse-text -mt-3">
                   monthly news & insights
@@ -33,17 +33,17 @@ const Footer = () => {
                   placeholder="Enter your e-mail address"
                   className="bg-transparent border border-gray-600 px-4 text-white rounded-l focus:outline-none h-8 md:w-64"
                 />
-                <button className="font-semibold subscribe text-sm bg-white text-gray-800 rounded-r h-8 md:w-20">
+                <button className="font-semibold subscribe text-sm bg-white text-gray-800 rounded-r h-8 px-2 md:w-20">
                   Subscribe
                 </button>
               </div>
-              <div className="flex items-center flex-col lg:flex-row mt-4">
+              <div className="flex items-center flex-row mt-4">
                 <img
                   src={certificate1}
                   alt=""
                   className="mb-2 md:mr-1 invert"
                 />
-                <img src={certificate2} alt="" className="md:ml-5" />
+                <img src={certificate2} alt="" className="ml-5" />
               </div>
             </div>
           </div>

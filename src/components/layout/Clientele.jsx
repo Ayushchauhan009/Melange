@@ -23,8 +23,8 @@ const Clientele = () => {
       </div>
       <div className="px-0 md:px-8 lg:px-24">
         {isMobile ? (
-          <div className="flex overflow-x-scroll ml-6 scrollbar-hide">
-            <div className="flex flex-nowrap">
+          <div className="flex overflow-x-scroll ml-6 scroll-container">
+            <div className="flex flex-nowrap scroll-animation">
               {clients.map((client, index) => (
                 <div key={index} className="flex justify-center mr-6">
                   <Client

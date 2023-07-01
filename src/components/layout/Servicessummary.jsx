@@ -57,7 +57,7 @@ const Servicessummary = ({ handleLinkHover }) => {
             alt={`Image ${hoveredIndex + 1}`}
             className={`w-full absolute sm:w-full h-auto sm:h-full z-0 md:mt-0 right-0 ${
               isMobile ? "hidden" : "block"
-            } sm:top-[1350px] md:top-[900px] lg:top-[1250px]  xl:top-[1410px] xxl:top-[1460px] 2xl:top-[1590px] xxxl:top-[1625px] xl4:top-[1660px] xl5:top-[1680px] xl6:top-[1725px] xl7:top-[1760px] transition-all ease-in-out duration-100`}
+            } sm:top-[1350px] md:top-[900px] lg:top-[1250px]  xl:top-[1410px] object-cover xxl:top-[1460px] 2xl:top-[1590px] xxxl:top-[1600px]  xll4:top-[1630px] xl5:top-[1680px] xl6:top-[1725px] xl7:top-[1760px] transition-all ease-in-out duration-100`}
             style={{
               opacity: hoveredIndex !== null ? 1 : 0,
               translateY: hoveredIndex !== null ? 0 : -100,

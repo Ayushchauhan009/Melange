@@ -370,6 +370,7 @@ const workpage = [
     title: "Costa Cruises",
     description:
       "Costa Cruises garnered over 60 press coverages across India, gaining widespread media attention. Additionally, a remarkable 40% increase in social media followers within just 3 days of the launch.      ",
+    path: "/work/costacruises",
   },
 
   {
@@ -386,7 +387,7 @@ const workpage = [
     icon: proportunity,
     tag1: "Brand Strategy",
     tag2: "Website Development",
-    tag3: "Design",
+    tag3: "Design Solutions",
     title: "Sportz Village",
     description:
       "The successful brand launch not only led to a remarkable 400% increase in website traffic but also positioned the brand as a leader in the sports consultation industry.",
@@ -421,7 +422,7 @@ const workpage = [
 
   {
     icon: makemytrip,
-    tag1: "Performance",
+    tag1: "Performance Marketing",
     tag2: "Social Media",
     tag3: "Content Marketing",
     title: "MakeMyTrip Holidays",

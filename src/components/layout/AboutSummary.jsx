@@ -15,11 +15,11 @@ const AboutSummary = () => {
               <h1 className="multiverse-text text-2xl md:text-4xl mt-4 sm:mt-0 pl-1 font-nunito font-extrabold">
                 Your Marketing Multiverse
               </h1>
-              <p className="font-extrabold font-nunito mt-1 pl-2">
+              <p className="font-bold font-nunito mt-1 pl-2">
                 The many worlds of marketing, under one roof!
               </p>
             </div>
-            <p className="pt-3 pl-2 font-nunito font-semibold w-auto md:w-[80%] text-[#0f0330]">
+            <p className="pt-3 pl-2 font-nunito font-semibold w-auto md:w-[80%] text-[15px] text-[#0f0330]">
               We believe that marketing extends beyond just crafting the right
               message, developing artistic creatives, or analyzing data. It's
               about integrating these elements with a{" "}

@@ -63,13 +63,13 @@ const OurTeam = () => {
 
   return (
     <div className="bg-[#1a1a1a] font-nunito py-16 px-8 md:px-24">
-      <h1 className="text-white font-bold text-4xl text-center mb-3">
+      <h1 className="text-white font-bold text-2xl md:text-4xl text-center mb-3">
         Meet the Guardians of Our Multiverse
       </h1>
       <p className="multiverse-text font-semibold text-lg text-center mb-3">
         We are a small team with a big heart and a long list of capabilities
       </p>
-      <p className="mb-10 font-normal text-md text-white text-center w-[80%] mx-auto">
+      <p className="mb-10 font-normal text-[15px] text-white text-center w-auto md:w-[80%] mx-auto">
         Our team is designed categorically with diverse skills that allow us to
         cross-pollinate learnings from our experiences across different
         industries and apply them to solve our clients' problems with innovative

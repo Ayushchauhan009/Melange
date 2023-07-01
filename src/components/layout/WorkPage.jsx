@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { workpage } from "../../constants";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -66,6 +67,7 @@ const Work = ({ icon, tag1, tag2, tag3, title, description, path }) => {
 
 const WorkSummary = () => {
   const [selectedFilter, setSelectedFilter] = useState("All Work");
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   // Handler for selecting a filter
   const handleFilterSelect = (filter) => {
@@ -96,7 +98,7 @@ const WorkSummary = () => {
 
   return (
     <div className="font-nunito px-8 sm:px-16 lg:px-28 mb-20 lg:pt-32 lg:pb-48">
-      <div className="py-14 sm:py-16">
+      <div className="pt-24 sm:pt-16 pb-10 sm:pb-20">
         <h1 className="font-bold text-2xl sm:text-4xl">Our Work</h1>
         <p className="font-medium text-base sm:text-xl mt-3 ml-1 w-auto md:w-[80%]">
           Explore our diverse range of projects, each a testament to our
@@ -105,13 +107,17 @@ const WorkSummary = () => {
         </p>
       </div>
       <div className="mb-8">
-        <div className="flex flex-col md:flex-row md:space-y-0 space-y-2 space-x-4">
+        <div
+          className={`flex flex-row ${
+            isMobile ? "xxs:flex-row overflow-x-scroll" : ""
+          } md:space-y-0 space-y-2 space-x-4`}
+        >
           {tags.map((tag) => (
             <button
               key={tag}
-              className={`py-2 px-2 text-[14px] font-bold  rounded-[50px] border ${
+              className={`py-2 md:py-2 px-4 md:px-2 whitespace-nowrap text-[14px] font-bold rounded-[50px] border ${
                 selectedFilter === tag
-                  ? "submit-bg border-none text-white"
+                  ? "submit-bg border-none py-0 text-white"
                   : "multiverse-text border-[#5556ff]"
               }`}
               onClick={() => handleFilterSelect(tag)}
@@ -121,7 +127,8 @@ const WorkSummary = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-64 2xl:gap-y-48 lg:mr-3">
+
+      <div className="grid grid-cols-1 pt-5 sm:grid-cols-2 gap-8 md:gap-x-32 2xl:gap-x-36 gap-y-24 md:gap-y-48 2xl:gap-y-80 xll4:gap-y-96 lg:mr-3">
         {filteredWorks.map((work, index) => (
           <div
             key={index}

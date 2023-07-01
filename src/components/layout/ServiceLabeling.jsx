@@ -8,9 +8,9 @@ import { servicearrow } from "../../assets/images";
 const Labels = ({ title, description, links, textColor }) => {
   return (
     <div className="my-10 lg:my-24 text-white">
-      <div className="flex flex-col lg:flex-row  justify-between items-center">
+      <div className="flex flex-col lg:flex-row  justify-between items-start md:items-center">
         <h1
-          className={`text-bg font-bold text-3xl label-heading lg:text-3xl mb-3 flex cursor-pointer items-center border-none lg:mb-3 ${textColor}`}
+          className={`text-bg font-extrabold text-[1.3rem] label-heading lg:text-3xl mb-3 flex cursor-pointer items-center border-none lg:mb-3 ${textColor}`}
         >
           <Link>{title}</Link>
           <span className="border-2 ml-3 p-2 rounded-[50px] hover:border-[#5556ff] ">
@@ -23,7 +23,7 @@ const Labels = ({ title, description, links, textColor }) => {
         </h1>
       </div>
       <div>
-        <p className={`text-base lg:text-xl text-white mb-8 ${textColor}`}>
+        <p className={`text-[15px] lg:text-xl text-white mb-8 ${textColor}`}>
           {description}
         </p>
       </div>
@@ -31,7 +31,7 @@ const Labels = ({ title, description, links, textColor }) => {
         {Object.values(links).map((link, index) => (
           <p
             key={index}
-            className={`${textColor} text-white flex text-[18px] w-auto items-center `}
+            className={`${textColor} text-white flex text-[16px] md:text-[18px] w-auto items-center `}
           >
             <a href="#" className="label-text">
               {link}
@@ -77,13 +77,13 @@ const ServiceLabeling = ({ textColor, inView }) => {
       style={{ opacity: inView ? 1 : 0 }} // Set opacity based on inView status
     >
       <h1
-        className={`font-bold text-3xl lg:text-4xl ${
+        className={`font-bold text-2xl md:text-3xl lg:text-4xl ${
           isScrolled ? "text-white" : "text-[#000]"
         }`}
       >
         Your very own Marketing Multiverse
       </h1>
-      <div className="space-y-28">
+      <div className="space-y-20 md:space-y-28">
         {labels.map((label, index) => {
           return <Labels key={index} {...label} textColor={textColor} />;
         })}

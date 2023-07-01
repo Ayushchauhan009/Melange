@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 import { Home, Services, Works, About, Contact } from "./components/pages";
 
-import { Zee5 } from "./components/pages/Casestudies";
+import { Zee5, CostaCruises } from "./components/pages/Casestudies";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,6 +27,7 @@ function App() {
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="/work/zee5" Component={Zee5} />
+        <Route path="/work/costacruises" Component={CostaCruises} />
       </Routes>
     </BrowserRouter>
   );

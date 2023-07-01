@@ -31,39 +31,41 @@ const CountingNumber = ({ value, duration }) => {
 
 const OurJourney = () => {
   return (
-    <div className="font-nunito pb-10 md:pb-64">
-      <h1 className="text-center font-bold text-4xl mt-10 mb-8 md:text-5xl lg:text-6xl">
+    <div className="font-nunito pb-44 md:pb-64">
+      <h1 className="text-center font-bold text-3xl mt-10 mb-8 md:text-4xl lg:text-4xl">
         Our Journey
       </h1>
       <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
-        <div className="text-center mb-10 md:mb-0">
-          <img src={clients} alt="" className="mb-3 w-20 h-16 mx-auto" />
-          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
-            <CountingNumber value={51} duration={2} /> <span>+</span>
-          </h1>
-          <p className="font-bold text-xl md:text-xl">Clients</p>
-        </div>
+        <div className="w-auto md:w-full grid grid-cols-2 md:grid-cols-4 gap-y-16 gap-x-4 md:gap-x-0 mx-0 md:mx-20 ">
+          <div className="text-center mb-10 md:mb-0">
+            <img src={clients} alt="" className="mb-3 w-20 h-16 mx-auto" />
+            <h1 className="font-bold text-2xl md:text-5xl lg:text-4xl">
+              <CountingNumber value={51} duration={2} /> <span>+</span>
+            </h1>
+            <p className="font-bold text-md md:text-xl">Clients</p>
+          </div>
 
-        <div className="text-center mb-10 md:mb-0">
-          <img src={media} alt="" className="mb-0 w-20 h-20 mx-auto" />
-          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
-            <CountingNumber value={101} duration={2} /> <span>Cr+</span>
-          </h1>
-          <p className="font-bold text-xl md:text-xl">Media Spends</p>
-        </div>
-        <div className="text-center mb-10 md:mb-0">
-          <img src={reach} alt="" className="mb-3 w-20 h-16 mx-auto" />
-          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
-            <CountingNumber value={2} duration={2} /> <span>Bn+</span>
-          </h1>
-          <p className="font-bold text-xl md:text-xl">Reach</p>
-        </div>
-        <div className="text-center">
-          <img src={campaigns} alt="" className="mb-3 w-20 h-16 mx-auto" />
-          <h1 className="font-bold text-4xl md:text-5xl lg:text-4xl">
-            <CountingNumber value={252} duration={3} /> <span>+</span>
-          </h1>
-          <p className="font-bold text-xl md:text-xl">Campaigns Executed</p>
+          <div className="text-center mb-10 md:mb-0">
+            <img src={media} alt="" className="mb-0 w-20 h-20 mx-auto" />
+            <h1 className="font-bold text-2xl md:text-5xl lg:text-4xl">
+              <CountingNumber value={101} duration={2} /> <span>Cr+</span>
+            </h1>
+            <p className="font-bold text-md md:text-xl">Media Spends</p>
+          </div>
+          <div className="text-center mb-10 md:mb-0">
+            <img src={reach} alt="" className="mb-3 w-20 h-16 mx-auto" />
+            <h1 className="font-bold text-2xl md:text-5xl lg:text-4xl">
+              <CountingNumber value={2} duration={2} /> <span>Bn+</span>
+            </h1>
+            <p className="font-bold text-md md:text-xl">Reach</p>
+          </div>
+          <div className="text-center">
+            <img src={campaigns} alt="" className="mb-3 w-20 h-16 mx-auto" />
+            <h1 className="font-bold text-2xl md:text-5xl lg:text-4xl">
+              <CountingNumber value={252} duration={3} /> <span>+</span>
+            </h1>
+            <p className="font-bold text-md md:text-xl">Campaigns Executed</p>
+          </div>
         </div>
       </div>
     </div>
